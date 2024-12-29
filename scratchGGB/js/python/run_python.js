@@ -115,7 +115,7 @@ function initPython() {
 	Sk.pre = "output";
 	// librairies Python
 	Sk.externalLibraries = {
-	   "scratchggb": {path: './js/python/bnm1/__init__.js'}
+	   "scratchggb": {path: './js/python/bnm1/init.js'}
 	}; 
 }
 
