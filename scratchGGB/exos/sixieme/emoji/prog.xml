@@ -1,0 +1,53 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="XjmhgAI;l.;]DHk/oFeZ" x="83" y="36">
+    <next>
+      <block type="ggb_couleur_remplissage" id="}po7GNv`5WZ:5Gd}z{Y9">
+        <value name="OBJ1">
+          <shadow type="text" id="K/5MEA][(9K(jY9K.GMI">
+            <field name="TEXT">f</field>
+          </shadow>
+        </value>
+        <value name="COLOR">
+          <shadow type="colour_picker" id="D.1^;^$zoK;jEXJPh8_F">
+            <field name="COLOUR">#00ff00</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="ggb_couleur_remplissage" id="Y0{6t/+p`:Z#_|A99UzL">
+            <value name="OBJ1">
+              <shadow type="text" id="!B$Iwiy`@//T)#g/?~bm">
+                <field name="TEXT">g</field>
+              </shadow>
+            </value>
+            <value name="COLOR">
+              <shadow type="colour_picker" id="Ko];O1bf##T^[18FgIc{">
+                <field name="COLOUR">#ff0000</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="ggb_commande_2pts" id="]~yA0+nUN1EX.en%RWTC">
+                <field name="OP">Circle</field>
+                <value name="NOM">
+                  <shadow type="text" id="Z%=l3Gnogn`N-=|iKem:">
+                    <field name="TEXT"></field>
+                  </shadow>
+                </value>
+                <value name="OBJ1">
+                  <shadow type="text" id="Vm|r$%KK/=^GHiCJPoUp">
+                    <field name="TEXT">A</field>
+                  </shadow>
+                </value>
+                <value name="OBJ2">
+                  <shadow type="text" id="Fta/-;F3hoQmfVceZ=-a">
+                    <field name="TEXT">C</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

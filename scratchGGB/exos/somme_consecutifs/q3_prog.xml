@@ -1,0 +1,184 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="oU71`hS~:9^3@Mm#W/=Z" islocal="false" iscloud="false">n</variable>
+    <variable type="" id="_4yQCb4fJVBfNP.O^kEm" islocal="false" iscloud="false">somme</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="data_setvariableto" id="c-|G}8+@in~8NzWli]Il">
+        <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+        <comment id="p*Os^$o#/4z5bP}X!v`o" pinned="true" h="91" w="158" x="240" y="7" minimized="false">Peut être modifié</comment>
+        <value name="VALUE">
+          <shadow type="text" id="L5;S][c+2F{Y=PNNfAf2">
+            <field name="TEXT">7</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="NDlGI][q,G;=:k[T7a?k">
+            <field name="VARIABLE" id="_4yQCb4fJVBfNP.O^kEm" variabletype="">somme</field>
+            <value name="VALUE">
+              <shadow type="text" id="P-);DC*KjY879!s~s[_K">
+                <field name="TEXT">0</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="data_changevariableby" id="m9B8^R43rU:`-X.s7gyM">
+                <field name="OP">+</field>
+                <field name="VARIABLE" id="_4yQCb4fJVBfNP.O^kEm" variabletype="">somme</field>
+                <value name="VALUE">
+                  <shadow type="math_number" id="H0;w-+P.octv!?YE{`3+">
+                    <field name="NUM"></field>
+                  </shadow>
+                  <block type="data_variable" id="-W!Sv!cnctO/?}SSb3cp">
+                    <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="data_changevariableby" id="Gr|;NGD//gjQz%SV8X.(">
+                    <field name="OP">+</field>
+                    <field name="VARIABLE" id="_4yQCb4fJVBfNP.O^kEm" variabletype="">somme</field>
+                    <value name="VALUE">
+                      <shadow type="math_number" id="JI)^i`)f:;3yu@CtdV]]">
+                        <field name="NUM"></field>
+                      </shadow>
+                      <block type="operator_add" id="k+j1$U0d+.J~p(k[R7}2">
+                        <value name="NUM1">
+                          <shadow type="math_number" id="#oqlyq7YCleRsQ6K)QEm">
+                            <field name="NUM"></field>
+                          </shadow>
+                          <block type="data_variable" id="gFRgK!|[+`!y~jM~`lGP">
+                            <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+                          </block>
+                        </value>
+                        <value name="NUM2">
+                          <shadow type="math_number" id="UD:0Wc^W/`izxM|ya%r6">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="data_changevariableby" id="AxoIE$uf-+*aW9oHU)w9">
+                        <field name="OP">+</field>
+                        <field name="VARIABLE" id="_4yQCb4fJVBfNP.O^kEm" variabletype="">somme</field>
+                        <value name="VALUE">
+                          <shadow type="math_number" id="JAH!XgpY_@Rgt{[osF%H">
+                            <field name="NUM"></field>
+                          </shadow>
+                          <block type="operator_add" id="@$R4T]o$iON|SrECNaI-">
+                            <value name="NUM1">
+                              <shadow type="math_number" id="(!hPT)1iTJFE6%x!6Uk=">
+                                <field name="NUM"></field>
+                              </shadow>
+                              <block type="data_variable" id="k8xp9cKmkfY!}fJT?.[2">
+                                <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+                              </block>
+                            </value>
+                            <value name="NUM2">
+                              <shadow type="math_number" id="72Q$yJZt+}0-I6D]GEPM">
+                                <field name="NUM">2</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="data_changevariableby" id="P]^*C,jiYB1ze]{,|*A-">
+                            <field name="OP">+</field>
+                            <field name="VARIABLE" id="_4yQCb4fJVBfNP.O^kEm" variabletype="">somme</field>
+                            <value name="VALUE">
+                              <shadow type="math_number" id="NSvF:nRz^V^P1rIpo%;g">
+                                <field name="NUM"></field>
+                              </shadow>
+                              <block type="operator_add" id="?L_=/`ZHs~^0dc.hmn-F">
+                                <value name="NUM1">
+                                  <shadow type="math_number" id="lX/hLcJ]@|JQY;gS#Yv=">
+                                    <field name="NUM"></field>
+                                  </shadow>
+                                  <block type="data_variable" id="P21E9,+#=4y-{9n(~W:o">
+                                    <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+                                  </block>
+                                </value>
+                                <value name="NUM2">
+                                  <shadow type="math_number" id="~[)mp@p$qn9m?7:OAvkR">
+                                    <field name="NUM">3</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="looks_say" id="X~##anfP513M,{GIjN7r">
+                                <value name="MESSAGE">
+                                  <shadow type="text" id="nac;fo5u6/lSuO]S]dI%">
+                                    <field name="TEXT"></field>
+                                  </shadow>
+                                  <block type="data_variable" id="fZ`L{8?IHyPGP%[(!bkZ">
+                                    <field name="VARIABLE" id="_4yQCb4fJVBfNP.O^kEm" variabletype="">somme</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="control_if_else" id="s~u^r,SkZhd:`^;o#9sW">
+                                    <value name="CONDITION">
+                                      <block type="operator_equals" id="$)=)Eu_6!Lve/iS;4-q}">
+                                        <value name="OPERAND1">
+                                          <shadow type="text" id="o{4sr3EdgfYZ~fg3NH[+">
+                                            <field name="TEXT"></field>
+                                          </shadow>
+                                          <block type="operator_mod" id="u8O[u)b`:-X,zdO^?A6w">
+                                            <value name="NUM1">
+                                              <shadow type="math_number" id="76iLHDz;pVT:W5t~VB,7">
+                                                <field name="NUM"></field>
+                                              </shadow>
+                                              <block type="data_variable" id="Apd,f`Z@.m_Ou=p]IS5Q">
+                                                <field name="VARIABLE" id="_4yQCb4fJVBfNP.O^kEm" variabletype="">somme</field>
+                                              </block>
+                                            </value>
+                                            <value name="NUM2">
+                                              <shadow type="math_number" id="1IlqMPN=w8!9t!,W/oX_">
+                                                <field name="NUM">4</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="OPERAND2">
+                                          <shadow type="text" id="CXut(Jex4Lv!5i~/iI.%">
+                                            <field name="TEXT">0</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="SUBSTACK">
+                                      <block type="looks_say" id="MT9hm:.bg7Otn_/7L;(#">
+                                        <value name="MESSAGE">
+                                          <shadow type="text" id="YY8n-{i4uzoUBSC.o]]t">
+                                            <field name="TEXT">la somme est divisible par 4</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <statement name="SUBSTACK2">
+                                      <block type="looks_say" id="_jS%wZ6eR57zOqY9tI=r">
+                                        <value name="MESSAGE">
+                                          <shadow type="text" id="C5t=1pN1KDr@J:/4EOu[">
+                                            <field name="TEXT">la somme n'est pas divisible par 4</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

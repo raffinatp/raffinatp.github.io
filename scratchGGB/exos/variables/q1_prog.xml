@@ -1,0 +1,195 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="af{X#IYkrhtx9=KRGcUw" islocal="false" iscloud="false">aire</variable>
+    <variable type="" id="xG1QH:089Gi9gBvO}GW^" islocal="false" iscloud="false">cote</variable>
+    <variable type="" id="PEz8Y!Dd0F(tzm37C[K(" islocal="false" iscloud="false">perimetre</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="19" y="-3">
+    <next>
+      <block type="data_setvariableto" id="V-G(n0-I!,$+Ttt2;A]b">
+        <field name="VARIABLE" id="xG1QH:089Gi9gBvO}GW^" variabletype="">cote</field>
+        <comment id="abEFo|DHdf}h6OSYsnhX" pinned="true" h="90.66666412353516" w="171.99993896484375" x="292" y="17" minimized="false">Peut être modifié</comment>
+        <value name="VALUE">
+          <shadow type="text" id="Ah(Q2YDc{[lI5LnL+j7x">
+            <field name="TEXT">3</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="ggb_point" id="P`OHdGu=@7Drs3=]G_f$">
+            <value name="NOM">
+              <shadow type="text" id="Dxq99.f#uoi-9/-;Oa6d">
+                <field name="TEXT">A</field>
+              </shadow>
+            </value>
+            <value name="X">
+              <shadow type="math_number" id="z*LsJv7O){+oWMtxJEV=">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="Y">
+              <shadow type="math_number" id="}n@t@;#C0|k,OlrH@u1v">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="ggb_point" id="b{)$-4C2T+N%o2$;3SRg">
+                <value name="NOM">
+                  <shadow type="text" id="xop4vb6HlZ#[_|TX53}Z">
+                    <field name="TEXT">B</field>
+                  </shadow>
+                </value>
+                <value name="X">
+                  <shadow type="math_number" id=";4P]c+c=.spex+`-j8G:">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="data_variable" id="fi$BNcKI64wpS8?a3,av">
+                    <field name="VARIABLE" id="xG1QH:089Gi9gBvO}GW^" variabletype="">cote</field>
+                  </block>
+                </value>
+                <value name="Y">
+                  <shadow type="math_number" id="M.$Z-B5/q%KC#(-]H|n7">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="ggb_point" id="`Ts(+qM.h4HY8xx+{PVh">
+                    <value name="NOM">
+                      <shadow type="text" id="SYWu^w8KQV(}VS{=h.NS">
+                        <field name="TEXT">C</field>
+                      </shadow>
+                    </value>
+                    <value name="X">
+                      <shadow type="math_number" id=",XtmHVv?CPJ%s*QbY)Zf">
+                        <field name="NUM">0</field>
+                      </shadow>
+                    </value>
+                    <value name="Y">
+                      <shadow type="math_number" id="9d`]?K4mta${NBl-0=.e">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="data_variable" id="ia2U.DJaYMDx_JsMOc`:">
+                        <field name="VARIABLE" id="xG1QH:089Gi9gBvO}GW^" variabletype="">cote</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="ggb_point" id=".K6w7}.hLVY0^X=cE4F-">
+                        <comment id=";f2x/TBJ]GyOBB/^H`_/" pinned="true" h="110" w="196" x="327" y="145" minimized="false">Complète pour que
+ABDC soit un carré
+                        </comment>
+                        <value name="NOM">
+                          <shadow type="text" id="F^$vi5!|oY[)$c6K,EW[">
+                            <field name="TEXT">D</field>
+                          </shadow>
+                        </value>
+                        <value name="X">
+                          <shadow type="math_number" id="3GO/YU{8YrREfgk-QI4!">
+                            <field name="NUM"></field>
+                          </shadow>
+                        </value>
+                        <value name="Y">
+                          <shadow type="math_number" id="_x4|{]aP,7ikk6y|/g8t">
+                            <field name="NUM"></field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="ggb_commande_2pts" id="wYWKQFgwn@UEnm=|eZ4X">
+                            <field name="OP">Segment</field>
+                            <value name="NOM">
+                              <shadow type="text" id="_.)L-(ww6_?O5tt(V%Wd">
+                                <field name="TEXT"></field>
+                              </shadow>
+                            </value>
+                            <value name="OBJ1">
+                              <shadow type="text" id="s-ED,*{CY778)Q%N+hak">
+                                <field name="TEXT">A</field>
+                              </shadow>
+                            </value>
+                            <value name="OBJ2">
+                              <shadow type="text" id="rK-^Uzj!GyHQX/69o95{">
+                                <field name="TEXT">B</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="ggb_commande_2pts" id="~;y+Gkpp~jCKAIB53bs(">
+                                <field name="OP">Segment</field>
+                                <value name="NOM">
+                                  <shadow type="text" id="[kyW;`6eE5p0;XbZJ[Xn">
+                                    <field name="TEXT"></field>
+                                  </shadow>
+                                </value>
+                                <value name="OBJ1">
+                                  <shadow type="text" id="sl`MS`zTU?+YEr%mt,~!">
+                                    <field name="TEXT">A</field>
+                                  </shadow>
+                                </value>
+                                <value name="OBJ2">
+                                  <shadow type="text" id="TB*MfL?Y9x:Ae#N|oO5l">
+                                    <field name="TEXT">C</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="data_setvariableto" id="ppU0hkN]J](=2Lxya{B#">
+                                    <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">aire</field>
+                                    <comment id="FC7IUTq9jOrHPbihT{$R" pinned="true" h="102" w="201" x="328" y="370" minimized="false">Complète pour donner
+l'aire du carré
+                                    </comment>
+                                    <value name="VALUE">
+                                      <shadow type="text" id="l-1Q|0,7@xa[ynpj6mh;">
+                                        <field name="TEXT"></field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="looks_say" id="g:/qx5BK;?s9ME*xP-$z">
+                                        <value name="MESSAGE">
+                                          <shadow type="text" id="^ETN=%?tPp|=yRgyu~j]">
+                                            <field name="TEXT"></field>
+                                          </shadow>
+                                          <block type="data_variable" id="o-Hn}8uF.SZ+L,RCy:Pj">
+                                            <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">aire</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="data_setvariableto" id="HqJ0%4VD(/l;DfGCgV@[">
+                                            <field name="VARIABLE" id="PEz8Y!Dd0F(tzm37C[K(" variabletype="">perimetre</field>
+                                            <comment id="wnT6q+Q)QCn?b$ZFrbvg" pinned="true" h="117" w="204" x="310" y="509" minimized="false">Complète pour donner
+le périmètre du carré
+                                            </comment>
+                                            <value name="VALUE">
+                                              <shadow type="text" id="oC#U96]FM}p+[2t7-yj]">
+                                                <field name="TEXT"></field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="looks_say" id="}Erpf74x}-U^14}*w[{v">
+                                                <value name="MESSAGE">
+                                                  <shadow type="text" id="4)JP-!8@A|z.D#^)k6K?">
+                                                    <field name="TEXT"></field>
+                                                  </shadow>
+                                                  <block type="data_variable" id="|WQ$pGouh-%Ha3zz-_w0">
+                                                    <field name="VARIABLE" id="PEz8Y!Dd0F(tzm37C[K(" variabletype="">perimetre</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

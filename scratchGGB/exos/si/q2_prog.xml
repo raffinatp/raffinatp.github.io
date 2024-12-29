@@ -1,0 +1,60 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="oU71`hS~:9^3@Mm#W/=Z" islocal="false" iscloud="false">a</variable>
+    <variable type="" id="rX=2n/`s+62xFEF;M~|E" islocal="false" iscloud="false">b</variable>
+    <variable type="" id="$^eaF6;H2]OT$Q]e/dPC" islocal="false" iscloud="false">c</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="data_setvariableto" id="?2(s00Re44s_-Z~qvucb">
+        <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">a</field>
+        <comment id="o}@-ue;;4M*_wy=o~!=6" pinned="true" h="81.33333587646484" w="157.33331298828125" x="252" y="13.333333333333336" minimized="false">Peut être modifié</comment>
+        <value name="VALUE">
+          <shadow type="text" id="b2ZX[UoN24?.)@;ER{kb">
+            <field name="TEXT">5</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="]XHytjpM|+*`@cQ7}Aee">
+            <field name="VARIABLE" id="rX=2n/`s+62xFEF;M~|E" variabletype="">b</field>
+            <comment id="W$yZGOZfQSknNpK.4GFs" pinned="true" h="92" w="161.33331298828125" x="252" y="106.66666666666667" minimized="false">Peut être modifié</comment>
+            <value name="VALUE">
+              <shadow type="text" id="QpXTMVN+%B8O;V)qx2bm">
+                <field name="TEXT">7</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="control_if_else" id="|WsM86UNvT[kS;sFf}!@">
+                <comment id="/W69UR#APiJB1Zn%s{bh" pinned="true" h="112" w="210" x="189" y="213.66666666666669" minimized="false">A compléter pour obtenir le maximum de a et de b</comment>
+                <statement name="SUBSTACK">
+                  <block type="looks_say" id="X:_D{W{E7Jb$:CoREB;:">
+                    <value name="MESSAGE">
+                      <shadow type="text" id="iQnj{.+}E35,heYF?N1$">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="data_variable" id="5-8ekI(WpIsy#m1Kxftf">
+                        <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">a</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="SUBSTACK2">
+                  <block type="looks_say" id="kyL+f4W?dvpA.HrcG^wc">
+                    <value name="MESSAGE">
+                      <shadow type="text" id="DvQ=76JS@TJ8Y4^PqI-4">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="data_variable" id="fPRBD@=Euzz]Wm}KRRD^">
+                        <field name="VARIABLE" id="rX=2n/`s+62xFEF;M~|E" variabletype="">b</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

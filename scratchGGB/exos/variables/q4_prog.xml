@@ -1,0 +1,81 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="Zq/etCebfP*)/!AiEbV=" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="data_setvariableto" id="PJcI,v{US-,pm#0Nz)uf">
+        <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+        <comment id="Db./(a]PcOvV{Bj(jP%%" pinned="true" h="80" w="166.6666259765625" x="292" y="5.333333333333343" minimized="false">Peut être modifié</comment>
+        <value name="VALUE">
+          <shadow type="text" id="gJtxZtXh[,8afIbe]S.=">
+            <field name="TEXT">7</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_changevariableby" id="D-Bt-l_J.vRgL`5wV=8d">
+            <field name="OP">*</field>
+            <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+            <comment id="1vQL7pl0KTY!|5=!ntL]" pinned="true" h="90.66665649414062" w="125.33331298828125" x="425" y="98.66666666666667" minimized="false">A remplacer</comment>
+            <value name="VALUE">
+              <shadow type="math_number" id="8w^H~](%X8ScP$/VF;-l">
+                <field name="NUM">6</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="data_changevariableby" id="MabsA`Yqz/gRPj4eiVr#">
+                <field name="OP">+</field>
+                <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+                <value name="VALUE">
+                  <shadow type="math_number" id="c`7Ckrj?:xnZVzFi-zG/">
+                    <field name="NUM">10</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="data_changevariableby" id="/=1#;Oqn-QVrg)Ucw.](">
+                    <field name="OP">/</field>
+                    <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+                    <comment id="$zf|qbjEsLkE8qE4pEEk" pinned="true" h="88" w="122.666748046875" x="432" y="205.33333333333334" minimized="false">A remplacer</comment>
+                    <value name="VALUE">
+                      <shadow type="math_number" id="WZ~NBrYlvLt1_(v|xXDi">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="looks_say" id="dSaGN=pm)uokW.HL(B_8">
+                        <value name="MESSAGE">
+                          <shadow type="text" id="|ELO!}8*fd`b~;ETw//C">
+                            <field name="TEXT"></field>
+                          </shadow>
+                          <block type="data_variable" id="*B.oxm5PC_?ECGIYWR^z">
+                            <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="data_setvariableto" id="z43Q.?g2P5[^+uEB;wst" x="580" y="121">
+    <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+    <value name="VALUE">
+      <shadow type="text" id="mF(DQVaeXT$Qox~kVEja">
+        <field name="TEXT"></field>
+      </shadow>
+    </value>
+  </block>
+  <block type="data_setvariableto" id="bUm(.M%7{LK7C)BZr`}5" x="584" y="230">
+    <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+    <value name="VALUE">
+      <shadow type="text" id="3pk`-?P9BCg@Nw%0IQ2L">
+        <field name="TEXT"></field>
+      </shadow>
+    </value>
+  </block>
+</xml>

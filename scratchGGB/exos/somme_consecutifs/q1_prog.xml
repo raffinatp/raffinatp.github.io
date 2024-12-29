@@ -1,0 +1,38 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="oU71`hS~:9^3@Mm#W/=Z" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="data_setvariableto" id="c-|G}8+@in~8NzWli]Il">
+        <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+        <comment id="p*Os^$o#/4z5bP}X!v`o" pinned="true" h="91.33333587646484" w="158.3333740234375" x="240" y="7" minimized="false">Peut être modifié</comment>
+        <value name="VALUE">
+          <shadow type="text" id="L5;S][c+2F{Y=PNNfAf2">
+            <field name="TEXT">7</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="looks_say" id="j8yyXH~l_Zm/M]iJ,Bj~">
+            <comment id="*{6l;ir-$@7L`}S/pt/G" pinned="true" h="93.33332824707031" w="252" x="161" y="108" minimized="false">Afficher l'entier suivant n</comment>
+            <value name="MESSAGE">
+              <shadow type="text" id="RSEv^s.J:wO;sQAQ-E#[">
+                <field name="TEXT"></field>
+              </shadow>
+            </value>
+            <next>
+              <block type="looks_say" id=";E!T55hJ;F[7Qc=05H*;">
+                <comment id="#w_x.V1}o$gmwFXh5Uk@" pinned="true" h="93" w="252" x="90" y="233.33333333333331" minimized="false">Afficher le suivant du suivant</comment>
+                <value name="MESSAGE">
+                  <shadow type="text" id="d0Mv{]]Dj@AXNTZz,n}4">
+                    <field name="TEXT"></field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

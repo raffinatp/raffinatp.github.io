@@ -1,0 +1,82 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="af{X#IYkrhtx9=KRGcUw" islocal="false" iscloud="false">remise</variable>
+    <variable type="" id="xG1QH:089Gi9gBvO}GW^" islocal="false" iscloud="false">pourcentage</variable>
+    <variable type="" id="PEz8Y!Dd0F(tzm37C[K(" islocal="false" iscloud="false">perimetre</variable>
+    <variable type="" id="rF{uKU/l5}.YXj3(o/lE" islocal="false" iscloud="false">prix</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="19" y="-3">
+    <next>
+      <block type="data_setvariableto" id="V-G(n0-I!,$+Ttt2;A]b">
+        <field name="VARIABLE" id="rF{uKU/l5}.YXj3(o/lE" variabletype="">prix</field>
+        <comment id=".{,Ka#R;9)M1bz{b`{BR" pinned="true" h="84.66666412353516" w="311.66668701171875" x="308" y="2" minimized="false">prix avant remise : peut  être modifié</comment>
+        <value name="VALUE">
+          <shadow type="text" id="Ah(Q2YDc{[lI5LnL+j7x">
+            <field name="TEXT">90</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="rl*T79x=l8c~4N:aFV){">
+            <field name="VARIABLE" id="xG1QH:089Gi9gBvO}GW^" variabletype="">pourcentage</field>
+            <comment id="4OqR$,!:70;-2d2P8usc" pinned="true" h="88.00001525878906" w="358.66656494140625" x="330" y="98.33333333333333" minimized="false">pourcentage de remise : peut être modifié</comment>
+            <value name="VALUE">
+              <shadow type="text" id="g[0]X`x@Cd+rf7OX5Bo]">
+                <field name="TEXT">10</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="data_setvariableto" id="ppU0hkN]J](=2Lxya{B#">
+                <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">remise</field>
+                <comment id="FC7IUTq9jOrHPbihT{$R" pinned="true" h="102" w="201" x="296" y="200" minimized="false">Complète pour donner
+la remise
+                </comment>
+                <value name="VALUE">
+                  <shadow type="text" id="l-1Q|0,7@xa[ynpj6mh;">
+                    <field name="TEXT"></field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="looks_say" id="{Kwn6Z~Qb,7I@QOfD=x-">
+                    <value name="MESSAGE">
+                      <shadow type="text" id="cO!.uj88C/`-Y7*OovW?">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="data_variable" id="w}-r$]i+-ZY[T|g=%`s%">
+                        <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">remise</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="data_setvariableto" id="HqJ0%4VD(/l;DfGCgV@[">
+                        <field name="VARIABLE" id="rF{uKU/l5}.YXj3(o/lE" variabletype="">prix</field>
+                        <comment id="wnT6q+Q)QCn?b$ZFrbvg" pinned="true" h="117" w="204" x="228" y="321" minimized="false">Complète pour donner
+le prix après remise
+                        </comment>
+                        <value name="VALUE">
+                          <shadow type="text" id="oC#U96]FM}p+[2t7-yj]">
+                            <field name="TEXT"></field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="looks_say" id="u@Mot(?o3~JUpzHtJW@T">
+                            <value name="MESSAGE">
+                              <shadow type="text" id="%c=INP6h[pYi+=nh}dt`">
+                                <field name="TEXT"></field>
+                              </shadow>
+                              <block type="data_variable" id=".C1H6RV4iuMEgLZQBh6#">
+                                <field name="VARIABLE" id="rF{uKU/l5}.YXj3(o/lE" variabletype="">prix</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
