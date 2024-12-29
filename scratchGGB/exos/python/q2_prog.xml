@@ -1,0 +1,45 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="avancer_reculer" id="}PPe9%nC+U|Aqv8~;p^f">
+        <field name="OP">forward</field>
+        <value name="NAME">
+          <shadow type="math_number" id="l%X^+v3#2tC?A]omhTwp">
+            <field name="NUM">2</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="control_repeat" id="j{!w!$g4k~@,a}vGZl=h">
+            <value name="TIMES">
+              <shadow type="math_whole_number" id="VI$bck25zgB@@kSai)6b">
+                <field name="NUM">4</field>
+              </shadow>
+            </value>
+            <statement name="SUBSTACK">
+              <block type="avancer_reculer" id="uXm6!.2ViF52N3KpTs_X">
+                <field name="OP">forward</field>
+                <value name="NAME">
+                  <shadow type="math_number" id=")%h.M]nA%CLi@``tBBc1">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="var_gauche_droite" id="2)fc[96Xju99bQo3D-^x">
+                    <field name="OP">right</field>
+                    <value name="NAME">
+                      <shadow type="math_number" id="UTY687H^%W43j}=T.hf}">
+                        <field name="NUM">90</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

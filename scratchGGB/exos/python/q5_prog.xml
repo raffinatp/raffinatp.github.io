@@ -1,0 +1,46 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="27" y="35">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="ggb_setCell" id="`ohLMYaNF^!`i#;cI;k1">
+        <value name="col">
+          <shadow type="text" id="CNQ!-D.r`Sq%y*K2fz1d">
+            <field name="TEXT">A</field>
+          </shadow>
+        </value>
+        <value name="lig">
+          <shadow type="math_number" id="+r+/rmA5t.m2LrGfx{{:">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="valeur">
+          <shadow type="text" id="kS^v4DUIRcLF%v{24$q5">
+            <field name="TEXT">2</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="looks_say" id="a_=WQfDqRVW?s$U7DT;g">
+            <value name="MESSAGE">
+              <shadow type="text" id=":#iXnI=T(t8@o3.h7_Z7">
+                <field name="TEXT"></field>
+              </shadow>
+              <block type="ggb_getCell" id="x9ourTe?w5gd./u8B0p.">
+                <value name="col">
+                  <shadow type="text" id="qwKu+TCs--pzn9wYp]B)">
+                    <field name="TEXT">A</field>
+                  </shadow>
+                </value>
+                <value name="lig">
+                  <shadow type="math_number" id="j~oennx|=lj1G]Oe*VIL">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

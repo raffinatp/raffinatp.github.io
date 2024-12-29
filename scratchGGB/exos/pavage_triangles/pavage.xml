@@ -1,0 +1,363 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="couleur_remplissage" id="-iKK+*VzcALe?11|XZU[">
+        <value name="COLOR">
+          <shadow type="colour_picker" id="vTVw.r8#-M*RmUw){068">
+            <field name="COLOUR">#00ff00</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="procedures_call" id="p*To8LOx-(!kkO]UhEzo">
+            <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+            <next>
+              <block type="tortue_teleport" id="o`UQ$a1VBF9L~E-%:_5f">
+                <value name="ABS">
+                  <shadow type="math_number" id="%=YTDa+|dj{i~#]WHj~c">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="ORD">
+                  <shadow type="math_number" id=":Nw52dp-i3]7HeRgRK$!">
+                    <field name="NUM">2</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="procedures_call" id="h=ZjL;bjVACky.F5sx~d">
+                    <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                    <next>
+                      <block type="tortue_teleport" id="tzY6/62r?R?TU}C{`R|r">
+                        <value name="ABS">
+                          <shadow type="math_number" id="+SVOU=FLV;YlRB+=*h}Z">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <value name="ORD">
+                          <shadow type="math_number" id="ti?M6rs/VDi4Aq-:s4;O">
+                            <field name="NUM">4</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="procedures_call" id="7~25+x$+ogcGJb#2U`H,">
+                            <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                            <next>
+                              <block type="tortue_teleport" id="3[4[`bYMurR^[DYu#*RX">
+                                <value name="ABS">
+                                  <shadow type="math_number" id="zLhK*3HDgW8zUlI+2`71">
+                                    <field name="NUM">2</field>
+                                  </shadow>
+                                </value>
+                                <value name="ORD">
+                                  <shadow type="math_number" id=")[wx~xBh6_/)%%b|Y?z.">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="procedures_call" id=")E*|hD_39T,0IFiu#7g1">
+                                    <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                    <next>
+                                      <block type="tortue_teleport" id="PdGqbr,T.b$|a=MNBQ(Z">
+                                        <value name="ABS">
+                                          <shadow type="math_number" id="iSE}(3OmTBFfN4!0dv+^">
+                                            <field name="NUM">2</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="ORD">
+                                          <shadow type="math_number" id="UNf$D=[(^~)f@;b~`5zW">
+                                            <field name="NUM">2</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="procedures_call" id="k_L?h(33*4rOCQlIdQ~V">
+                                            <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                            <next>
+                                              <block type="tortue_teleport" id="XKwB:a7p=VccDHCNZ`$=">
+                                                <value name="ABS">
+                                                  <shadow type="math_number" id="|+KJj^qKWKbu-4=hf7^@">
+                                                    <field name="NUM">2</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="ORD">
+                                                  <shadow type="math_number" id="7Rx5ANQ-rmL=9c+%,-qh">
+                                                    <field name="NUM">4</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="procedures_call" id="L1,*M36b^.[p@M4~gI,0">
+                                                    <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                                    <next>
+                                                      <block type="tortue_teleport" id="@0TkW1N^JBx%DNDL@2WB">
+                                                        <value name="ABS">
+                                                          <shadow type="math_number" id="zh%7AIsS[q*W~s_uF$b[">
+                                                            <field name="NUM">4</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <value name="ORD">
+                                                          <shadow type="math_number" id="9)?#tZ8!yoBB7xNBrd?{">
+                                                            <field name="NUM">0</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <next>
+                                                          <block type="procedures_call" id="t).J|xHjws3tXj;jCQo1">
+                                                            <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                                            <next>
+                                                              <block type="tortue_teleport" id="Yh5)?=_,D~vtNkb0en*=">
+                                                                <value name="ABS">
+                                                                  <shadow type="math_number" id="|N%g|m*/zL5~FBoNo$TK">
+                                                                    <field name="NUM">4</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <value name="ORD">
+                                                                  <shadow type="math_number" id="9afU}lr;pxohry29QyCE">
+                                                                    <field name="NUM">2</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="procedures_call" id="k+BRk,ycI*B+]Ev@L5G}">
+                                                                    <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                                                    <next>
+                                                                      <block type="tortue_teleport" id="`KD/kz^5)ym(`M:=d0g]">
+                                                                        <value name="ABS">
+                                                                          <shadow type="math_number" id="/z~S,Ce4I]w%0rUX9v=f">
+                                                                            <field name="NUM">4</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <value name="ORD">
+                                                                          <shadow type="math_number" id="%A.!(l?y!CAwwCj}vek8">
+                                                                            <field name="NUM">4</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="procedures_call" id="V[x01pJ0j.1Gg?Ft[vF@">
+                                                                            <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                                                            <next>
+                                                                              <block type="tortue_teleport" id="[5t@]3(s1o:$zO$c-pux">
+                                                                                <value name="ABS">
+                                                                                  <shadow type="math_number" id="N},PrApYg#6iF3:Oh#l2">
+                                                                                    <field name="NUM">6</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                                <value name="ORD">
+                                                                                  <shadow type="math_number" id="f;CKBD2P!t[T)1T.8ZI.">
+                                                                                    <field name="NUM">0</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="procedures_call" id="cGPs50Ny#5,gY_.3D4gv">
+                                                                                    <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                                                                    <next>
+                                                                                      <block type="tortue_teleport" id="dNb6`*=i.5-R;`)DP*+P">
+                                                                                        <value name="ABS">
+                                                                                          <shadow type="math_number" id="-d0l(gI0`4t3CL^Tanlx">
+                                                                                            <field name="NUM">6</field>
+                                                                                          </shadow>
+                                                                                        </value>
+                                                                                        <value name="ORD">
+                                                                                          <shadow type="math_number" id="0UCW5%II%P226yhOh%-l">
+                                                                                            <field name="NUM">2</field>
+                                                                                          </shadow>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                          <block type="procedures_call" id="gojZG4sii0OIJ~S4RhLV">
+                                                                                            <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                                                                            <next>
+                                                                                              <block type="tortue_teleport" id=")(Z{]Bmnh3Ei@18YV.xJ">
+                                                                                                <value name="ABS">
+                                                                                                  <shadow type="math_number" id="V2L^%GUw*{,3m[r}O2Zq">
+                                                                                                    <field name="NUM">6</field>
+                                                                                                  </shadow>
+                                                                                                </value>
+                                                                                                <value name="ORD">
+                                                                                                  <shadow type="math_number" id=",T9veyng0q*dh#_xlZCp">
+                                                                                                    <field name="NUM">4</field>
+                                                                                                  </shadow>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="procedures_call" id="ICRCFg+jrj1HCw+ZOlhM">
+                                                                                                    <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                                                                                    <next>
+                                                                                                      <block type="couleur_remplissage" id=")u|6J2t_+N^{~.*T8Bzv">
+                                                                                                        <value name="COLOR">
+                                                                                                          <shadow type="colour_picker" id="tIng{DK2_%py3hr!c5Yh">
+                                                                                                            <field name="COLOUR">#ff0000</field>
+                                                                                                          </shadow>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="tortue_teleport" id="v_a3#]IFOAAtfp^wCw`,">
+                                                                                                            <value name="ABS">
+                                                                                                              <shadow type="math_number" id="I7P{NTm=h+dh:b}l+GWp">
+                                                                                                                <field name="NUM">6</field>
+                                                                                                              </shadow>
+                                                                                                            </value>
+                                                                                                            <value name="ORD">
+                                                                                                              <shadow type="math_number" id="?Y$^L[TGix`X_X;({]$8">
+                                                                                                                <field name="NUM">4</field>
+                                                                                                              </shadow>
+                                                                                                            </value>
+                                                                                                            <next>
+                                                                                                              <block type="procedures_call" id=")Y`#m+{1Appw,lX:`/#c">
+                                                                                                                <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+                                                                                                                <next>
+                                                                                                                  <block type="avancer_reculer" id="$tcwXnQDLuYoyy{kG5K+">
+                                                                                                                    <field name="OP">forward</field>
+                                                                                                                    <value name="NAME">
+                                                                                                                      <shadow type="math_number" id="s=`ni@AK24~v~Dmb}Mxj">
+                                                                                                                        <field name="NUM"></field>
+                                                                                                                      </shadow>
+                                                                                                                    </value>
+                                                                                                                  </block>
+                                                                                                                </next>
+                                                                                                              </block>
+                                                                                                            </next>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_definition" id="^RY/^3)sz`c$y@/CviSi" x="284" y="32">
+    <statement name="custom_block">
+      <block type="procedures_prototype" id="^n}AoVb}UOb8FHAL*Me5">
+        <mutation proccode="motif" argumentids="[]" argumentnames="[]" argumentdefaults="[]" warp="false"></mutation>
+      </block>
+    </statement>
+    <next>
+      <block type="debut_fin_remplissage" id="H#Syg=5`e+OyV/*-ULl3">
+        <field name="OP">debut</field>
+        <next>
+          <block type="avancer_reculer" id="H_4HZAdA+#HRfpW81gq8">
+            <field name="OP">forward</field>
+            <value name="NAME">
+              <shadow type="math_number" id="UW,W.gtWf0u2{bkO5T]@">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="var_gauche_droite" id="Z+pu{8!C6}Q4h5+@|V/?">
+                <field name="OP">right</field>
+                <value name="NAME">
+                  <shadow type="math_number" id=",`m]]Uqxf/$1]l;Z-57^">
+                    <field name="NUM">90</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="avancer_reculer" id="%{(I[9YCWDpd}=4SCqf|">
+                    <field name="OP">forward</field>
+                    <value name="NAME">
+                      <shadow type="math_number" id="I_l7-=ra/^S{QS.t|pff">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="var_gauche_droite" id="Mw7hj;,UBVVlm?@BWT#O">
+                        <field name="OP">right</field>
+                        <value name="NAME">
+                          <shadow type="math_number" id="K+i(fB#8XWB3NK8},C1f">
+                            <field name="NUM">135</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="avancer_reculer" id="b`!$Q)$eKVZ+9!lAXZic">
+                            <field name="OP">forward</field>
+                            <value name="NAME">
+                              <shadow type="math_number" id="rDS|mVl68DJfldRBY~~P">
+                                <field name="NUM"></field>
+                              </shadow>
+                              <block type="operator_multiply" id="MtG-.k%-iafM8E(8]02!">
+                                <value name="NUM1">
+                                  <shadow type="math_number" id="+B10pZqI$gM.CAsjS%?-">
+                                    <field name="NUM">2</field>
+                                  </shadow>
+                                </value>
+                                <value name="NUM2">
+                                  <shadow type="math_number" id="Q+!O{OH`RK!HqdG-7/dZ">
+                                    <field name="NUM"></field>
+                                  </shadow>
+                                  <block type="operator_mathop" id="XyHZsSYYmL|5kZA#wLf7">
+                                    <field name="OPERATOR">sqrt</field>
+                                    <value name="NUM">
+                                      <shadow type="math_number" id="vx=Nz@0Y%wT6T{4m7R+u">
+                                        <field name="NUM">2</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="var_gauche_droite" id="BDD=hQGtaTXX59]]:#.-">
+                                <field name="OP">right</field>
+                                <value name="NAME">
+                                  <shadow type="math_number" id="?{C!KdNICi1mAbA,1xD$">
+                                    <field name="NUM">135</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="debut_fin_remplissage" id="OBx0#*!dKI6+7KT(@]-@">
+                                    <field name="OP">fin</field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

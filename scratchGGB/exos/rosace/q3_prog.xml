@@ -1,0 +1,183 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="m0)U-hulb9*[n1pgoO)K" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="procedures_call" id="A%@f)$^T;P)T;nQ%%D~T">
+        <mutation proccode="cinqRotations %s" argumentids="[&quot;ARG1&quot;]" warp="false"></mutation>
+        <value name="ARG1">
+          <shadow type="text" id="-r%TNi2I=jm53quFs.-{">
+            <field name="TEXT">A</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="ggb_3_arg" id="8Oi9d3V3Kgc?0o@k},SW">
+            <field name="OP">CircleArc</field>
+            <value name="NOM">
+              <shadow type="text" id="qY%6dTo|e.rLn=+GIIjj">
+                <field name="TEXT">d0</field>
+              </shadow>
+            </value>
+            <value name="OBJ1">
+              <shadow type="text" id=":.Ar?=25B6A%.6+dofsA">
+                <field name="TEXT">A5</field>
+              </shadow>
+            </value>
+            <value name="OBJ2">
+              <shadow type="text" id="8V;6~+]Pt|]wAfCP-{r{">
+                <field name="TEXT">A0</field>
+              </shadow>
+            </value>
+            <value name="OBJ3">
+              <shadow type="text" id="tN1}g$Z3MIdc-cXs.1OH">
+                <field name="TEXT">P</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="ggb_1_arg" id="T5fH4R8OMG)P76{g1D#c">
+                <field name="OP">ggbApplet.setLabelVisible</field>
+                <value name="NOM">
+                  <shadow type="text" id="fs3!lSx}giKpKS:zhN#H">
+                    <field name="TEXT">d0</field>
+                  </shadow>
+                </value>
+                <value name="OBJ1">
+                  <shadow type="text" id="`R(9S9pUe)}7_nxX@p_+">
+                    <field name="TEXT">1</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="procedures_call" id="qFUQ.?$V.admnt/ukWKc">
+                    <mutation proccode="cinqRotations %s" argumentids="[&quot;ARG1&quot;]" warp="false"></mutation>
+                    <value name="ARG1">
+                      <shadow type="text" id="l)XntJpReO*f7rmMorh}">
+                        <field name="TEXT">d</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_definition" id="%vUCwL)V+6s1HxN%9K=f" x="353" y="29">
+    <statement name="custom_block">
+      <block type="procedures_prototype" id="vK-fzzXA{Q-6pi!A)f/%">
+        <mutation proccode="cinqRotations %s" argumentids="[&quot;ARG1&quot;]" argumentnames="[&quot;nom&quot;]" argumentdefaults="[&quot;&quot;]" warp="false"></mutation>
+        <value name="ARG1">
+          <shadow type="argument_reporter_string_number" id="*Ir9_}+jXL`AeOh$F)0T">
+            <field name="VALUE">nom</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="data_setvariableto" id="[]~4+++-X^fg3u:k*/Wo">
+        <field name="VARIABLE" id="m0)U-hulb9*[n1pgoO)K" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="kry-O!~L~_$[CMh#ZUml">
+            <field name="TEXT">1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="control_repeat" id="9yLB@UA:EnK8XwP(S6QP">
+            <value name="TIMES">
+              <shadow type="math_whole_number" id="=*3Y$]vd],Id`om5nH%Z">
+                <field name="NUM">5</field>
+              </shadow>
+            </value>
+            <statement name="SUBSTACK">
+              <block type="ggb_3_arg" id="-_e-,ba(x`In4?t)L1K2">
+                <field name="OP">Rotate</field>
+                <value name="NOM">
+                  <shadow type="text" id=";eJ=r%y%2=*_U;Lm#w@T">
+                    <field name="TEXT">A2</field>
+                  </shadow>
+                  <block type="operator_join" id="y@A9z/N,pX_Cbf/eT}zW">
+                    <value name="STRING1">
+                      <shadow type="text" id="{eu{d(#[}uty!:-dEk;Q">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="argument_reporter_string_number" id="czI-M_3eG!-L#(n#1ITI">
+                        <field name="VALUE">nom</field>
+                      </block>
+                    </value>
+                    <value name="STRING2">
+                      <shadow type="text" id="QJZ+OhG!TYE%]:POg)(w">
+                        <field name="TEXT">world</field>
+                      </shadow>
+                      <block type="data_variable" id="A.K@r7$Wgyg%?q7ppDg0">
+                        <field name="VARIABLE" id="m0)U-hulb9*[n1pgoO)K" variabletype="">n</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="OBJ1">
+                  <shadow type="text" id="OTwtEpE.]mdF4s?=:UJy">
+                    <field name="TEXT"></field>
+                  </shadow>
+                  <block type="operator_join" id="hq)Lv928CC:]B0S~~*5{">
+                    <value name="STRING1">
+                      <shadow type="text" id=",LfI?4RXEWX)rO)^gg;}">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="argument_reporter_string_number" id=":1~2Ai~e=_!`*[G.#63l">
+                        <field name="VALUE">nom</field>
+                      </block>
+                    </value>
+                    <value name="STRING2">
+                      <shadow type="text" id=";,uR6G4v)bu63H!}cg($">
+                        <field name="TEXT">0</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="OBJ2">
+                  <shadow type="text" id=".,oT%[5H8YT=WNL?yY0W">
+                    <field name="TEXT"></field>
+                  </shadow>
+                  <block type="operator_multiply" id="!~)Zm4g!nZL$?)0#0M^S">
+                    <value name="NUM1">
+                      <shadow type="math_number" id="mJPWr!-NE+YPB=j!T5xb">
+                        <field name="NUM">60</field>
+                      </shadow>
+                    </value>
+                    <value name="NUM2">
+                      <shadow type="math_number" id="%hHwzb]X9q9cS8.p43VO">
+                        <field name="NUM"></field>
+                      </shadow>
+                      <block type="data_variable" id="65:USC9-Jn:Q;FwV!/Fv">
+                        <field name="VARIABLE" id="m0)U-hulb9*[n1pgoO)K" variabletype="">n</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="OBJ3">
+                  <shadow type="text" id="Uk-gr4mk^mueZtZ7R}p$">
+                    <field name="TEXT">P</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="data_changevariableby" id="0kC^8$e:o[EX0u!vz;3y">
+                    <field name="OP">+</field>
+                    <field name="VARIABLE" id="m0)U-hulb9*[n1pgoO)K" variabletype="">n</field>
+                    <value name="VALUE">
+                      <shadow type="math_number" id="f3JuZ9yxDQ89v#%dx=n1">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
