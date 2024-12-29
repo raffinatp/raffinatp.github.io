@@ -1,0 +1,251 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="m0)U-hulb9*[n1pgoO)K" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="data_setvariableto" id="[]~4+++-X^fg3u:k*/Wo">
+        <field name="VARIABLE" id="m0)U-hulb9*[n1pgoO)K" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="kry-O!~L~_$[CMh#ZUml">
+            <field name="TEXT">1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="control_repeat" id="9yLB@UA:EnK8XwP(S6QP">
+            <value name="TIMES">
+              <shadow type="math_whole_number" id="=*3Y$]vd],Id`om5nH%Z">
+                <field name="NUM">5</field>
+              </shadow>
+            </value>
+            <statement name="SUBSTACK">
+              <block type="ggb_3_arg" id="-_e-,ba(x`In4?t)L1K2">
+                <field name="OP">Rotate</field>
+                <value name="NOM">
+                  <shadow type="text" id=";eJ=r%y%2=*_U;Lm#w@T">
+                    <field name="TEXT">A2</field>
+                  </shadow>
+                  <block type="operator_join" id="y@A9z/N,pX_Cbf/eT}zW">
+                    <value name="STRING1">
+                      <shadow type="text" id="{eu{d(#[}uty!:-dEk;Q">
+                        <field name="TEXT">A</field>
+                      </shadow>
+                    </value>
+                    <value name="STRING2">
+                      <shadow type="text" id="QJZ+OhG!TYE%]:POg)(w">
+                        <field name="TEXT">world</field>
+                      </shadow>
+                      <block type="data_variable" id="A.K@r7$Wgyg%?q7ppDg0">
+                        <field name="VARIABLE" id="m0)U-hulb9*[n1pgoO)K" variabletype="">n</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="OBJ1">
+                  <shadow type="text" id="OTwtEpE.]mdF4s?=:UJy">
+                    <field name="TEXT">A0</field>
+                  </shadow>
+                </value>
+                <value name="OBJ2">
+                  <shadow type="text" id=".,oT%[5H8YT=WNL?yY0W">
+                    <field name="TEXT"></field>
+                  </shadow>
+                  <block type="operator_multiply" id="!~)Zm4g!nZL$?)0#0M^S">
+                    <value name="NUM1">
+                      <shadow type="math_number" id="mJPWr!-NE+YPB=j!T5xb">
+                        <field name="NUM">60</field>
+                      </shadow>
+                    </value>
+                    <value name="NUM2">
+                      <shadow type="math_number" id="%hHwzb]X9q9cS8.p43VO">
+                        <field name="NUM"></field>
+                      </shadow>
+                      <block type="data_variable" id="65:USC9-Jn:Q;FwV!/Fv">
+                        <field name="VARIABLE" id="m0)U-hulb9*[n1pgoO)K" variabletype="">n</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="OBJ3">
+                  <shadow type="text" id="Uk-gr4mk^mueZtZ7R}p$">
+                    <field name="TEXT">P</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="data_changevariableby" id="0kC^8$e:o[EX0u!vz;3y">
+                    <field name="OP">+</field>
+                    <field name="VARIABLE" id="m0)U-hulb9*[n1pgoO)K" variabletype="">n</field>
+                    <value name="VALUE">
+                      <shadow type="math_number" id="f3JuZ9yxDQ89v#%dx=n1">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="ggb_3_arg" id="8Oi9d3V3Kgc?0o@k},SW">
+                <field name="OP">CircleArc</field>
+                <value name="NOM">
+                  <shadow type="text" id="qY%6dTo|e.rLn=+GIIjj">
+                    <field name="TEXT">d0</field>
+                  </shadow>
+                </value>
+                <value name="OBJ1">
+                  <shadow type="text" id=":.Ar?=25B6A%.6+dofsA">
+                    <field name="TEXT">A5</field>
+                  </shadow>
+                </value>
+                <value name="OBJ2">
+                  <shadow type="text" id="8V;6~+]Pt|]wAfCP-{r{">
+                    <field name="TEXT">A0</field>
+                  </shadow>
+                </value>
+                <value name="OBJ3">
+                  <shadow type="text" id="tN1}g$Z3MIdc-cXs.1OH">
+                    <field name="TEXT">P</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="ggb_3_arg" id="~^YC.Pz=8L#S]jiyO%%~">
+                    <field name="OP">CircleArc</field>
+                    <value name="NOM">
+                      <shadow type="text" id="(`e#I-L2/T0yq!6p#.O-">
+                        <field name="TEXT">e0</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ1">
+                      <shadow type="text" id="%vCnxX@iCqEhyiT8rc%b">
+                        <field name="TEXT">A1</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ2">
+                      <shadow type="text" id="D3eUD{I3Yc[_PA{fNkN-">
+                        <field name="TEXT">P</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ3">
+                      <shadow type="text" id="#~gG|geyQ$X9dF%BZmX|">
+                        <field name="TEXT">A0</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="ggb_couleur_remplissage" id="z9k,F@eV4Du;1{d53Skj">
+                        <value name="OBJ1">
+                          <shadow type="text" id="w00c1oW4h2lsF?d*bP[2">
+                            <field name="TEXT">d0</field>
+                          </shadow>
+                        </value>
+                        <value name="COLOR">
+                          <shadow type="colour_picker" id="}dLNz%Go0aI~MR`in~Dt">
+                            <field name="COLOUR">#00ff00</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="ggb_couleur_remplissage" id="=5qq?h~bZ@[SgE^A0zp~">
+                            <value name="OBJ1">
+                              <shadow type="text" id="xp~X?|(r3l`2Wl/+y7S|">
+                                <field name="TEXT">e0</field>
+                              </shadow>
+                            </value>
+                            <value name="COLOR">
+                              <shadow type="colour_picker" id="|E4)ynS!~(}lY_6h.yu_">
+                                <field name="COLOUR">#ff0c00</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="ggb_1_arg" id=".Q{`UVdVVkX]fA-q_F?0">
+                                <field name="OP">ggbApplet.setFilling</field>
+                                <value name="NOM">
+                                  <shadow type="text" id="cj#is$AXhOD}B]tR2=n/">
+                                    <field name="TEXT">d0</field>
+                                  </shadow>
+                                </value>
+                                <value name="OBJ1">
+                                  <shadow type="text" id="w)CN1F%bllvFki#/dieG">
+                                    <field name="TEXT">0.2</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="ggb_1_arg" id="4S|DEfkF52ugmKsLh%|l">
+                                    <field name="OP">ggbApplet.setFilling</field>
+                                    <value name="NOM">
+                                      <shadow type="text" id="r4N%.2YFtfgQo=[(q?Qh">
+                                        <field name="TEXT">e0</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="OBJ1">
+                                      <shadow type="text" id="HP}h?`J8Pb!%m63iQW3i">
+                                        <field name="TEXT">0.2</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="ggb_3_arg" id="]B~zS|65i2~l=dcZx[HX">
+                                        <field name="OP">Rotate</field>
+                                        <value name="NOM">
+                                          <shadow type="text" id="`L-lnA)+FW%2rqlM]G_~">
+                                            <field name="TEXT"></field>
+                                          </shadow>
+                                        </value>
+                                        <value name="OBJ1">
+                                          <shadow type="text" id="pv@r`T-uP^arQ.Wk7A^k">
+                                            <field name="TEXT">d0</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="OBJ2">
+                                          <shadow type="text" id="NOwVeBmq/JoO{-wojuDw">
+                                            <field name="TEXT">60</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="OBJ3">
+                                          <shadow type="text" id="qy%vh3TecBlb0=ik9olX">
+                                            <field name="TEXT">P</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="ggb_3_arg" id="+6n7[Wq_New-I,SU)q%j">
+                                            <field name="OP">Rotate</field>
+                                            <value name="NOM">
+                                              <shadow type="text" id="L,xU;Vv(3V!VLyw`*d;k">
+                                                <field name="TEXT"></field>
+                                              </shadow>
+                                            </value>
+                                            <value name="OBJ1">
+                                              <shadow type="text" id="(:)s$89Z-gPJ=aZ3kxk}">
+                                                <field name="TEXT">e0</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="OBJ2">
+                                              <shadow type="text" id="YEet+meC~C$TLPENQrKv">
+                                                <field name="TEXT">60</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="OBJ3">
+                                              <shadow type="text" id="S/eS)VKr$J[Hj~n5k5@/">
+                                                <field name="TEXT">P</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

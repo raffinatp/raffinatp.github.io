@@ -1,0 +1,97 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="oU71`hS~:9^3@Mm#W/=Z" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="data_setvariableto" id="?2(s00Re44s_-Z~qvucb">
+        <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="b2ZX[UoN24?.)@;ER{kb">
+            <field name="TEXT"></field>
+          </shadow>
+          <block type="operator_random" id="O}[NC#Zo@5aAMuwF?{z$">
+            <value name="FROM">
+              <shadow type="math_number" id="3|P7BMl;yy0m4i:Q]kL+">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow type="math_number" id="L{0+tglR;lsM-A:9Xfu2">
+                <field name="NUM">12</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="looks_say" id="lNXQY1}#kV/!Pwt$UF)T">
+            <value name="MESSAGE">
+              <shadow type="text" id="i:qGGzdMSQt53c!,C)7w">
+                <field name="TEXT"></field>
+              </shadow>
+              <block type="data_variable" id="odvqXQ0O*=qHlD)H-7Y%">
+                <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+              </block>
+            </value>
+            <next>
+              <block type="control_if" id="iFO#Ht=mzH,X]*rNo=#|">
+                <comment id="J1f5^hP5XqQZX1qP@.%6" pinned="true" h="93.33332824707031" w="125.333251953125" x="371" y="107.99999999999999" minimized="false">A compléter</comment>
+                <statement name="SUBSTACK">
+                  <block type="looks_say" id="Kp;mI96r|]#Z)Bmvip`9">
+                    <value name="MESSAGE">
+                      <shadow type="text" id="t!7ZPQN2[92T[jY[s}59">
+                        <field name="TEXT">un, deux, trois, j'irai dans les bois</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="control_if" id="Dk8#@OR.!Q-rF5Jqiqlg">
+                    <comment id="D5wEsliKz?zgb0jrVT^%" pinned="true" h="92" w="128" x="372" y="226.66666666666669" minimized="false">A compléter</comment>
+                    <statement name="SUBSTACK">
+                      <block type="looks_say" id="a_MVR)f|?_Q6=(1J]ER+">
+                        <value name="MESSAGE">
+                          <shadow type="text" id="2F4?2Hf~1ZT8l]f/suz]">
+                            <field name="TEXT">quatre, cinq, six, cueillir des cerises</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="control_if" id="+)XGXR{,zQ2/swWdeE[i">
+                        <comment id="=?+;F}lcg)K#g7[!ne{H" pinned="true" h="94.66665649414062" w="129.333251953125" x="372" y="346.6666666666667" minimized="false">A compléter</comment>
+                        <statement name="SUBSTACK">
+                          <block type="looks_say" id=":PrT0.``k8?V){z+#YyH">
+                            <value name="MESSAGE">
+                              <shadow type="text" id="6WEE2Nw+Zt*X2!4}%vBs">
+                                <field name="TEXT">sept, huit, neuf, dans mon panier neuf</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="control_if" id="L+..@_P]}dw2Nt=7p1aK">
+                            <comment id="ui@/H$0`r|uKkUN{^,J8" pinned="true" h="94.6666259765625" w="120" x="376" y="472" minimized="false">A compléter</comment>
+                            <statement name="SUBSTACK">
+                              <block type="looks_say" id="{MVf|c/_%PDgLv@{ItY%">
+                                <value name="MESSAGE">
+                                  <shadow type="text" id="cMHM6?or)N,1]qIAt@br">
+                                    <field name="TEXT">dix, onze, douze, elles seront toutes rouges</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

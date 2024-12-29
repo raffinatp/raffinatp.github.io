@@ -1,0 +1,54 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="af{X#IYkrhtx9=KRGcUw" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="19" y="-3">
+    <next>
+      <block type="data_setvariableto" id="P[Bk^?Fw5x]*-Eu@mV+U">
+        <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="sQW(j?9d`.@(o%s?D-^i">
+            <field name="TEXT">6</field>
+          </shadow>
+          <block type="ggb_valeur_de" id="8Ruo-_v5FHEFMKG6ne[I">
+            <value name="NAME">
+              <shadow type="text" id="dNk+.vFW8xX;GtY9Iq.(">
+                <field name="TEXT">n</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="couleur_remplissage" id="y@/AaC5Kt1OG`i){OAEI">
+            <value name="COLOR">
+              <shadow type="colour_picker" id="obr3)|yk3jTjcUMkmxE1">
+                <field name="COLOUR">#ff0000</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="control_if_else" id="c5Yrvc(W*Zh0U^S^1z@_">
+                <comment id="@TfR~xm*#bJx-9!sRuHW" pinned="true" h="110.66665649414062" w="200.00006103515625" x="326" y="119.66666666666667" minimized="false">A compléter en fonction de la valeur de n</comment>
+                <next>
+                  <block type="avancer_reculer" id="-7U2D?oH]MK@JPEk#Yv3">
+                    <field name="OP">forward</field>
+                    <value name="NAME">
+                      <shadow type="math_number" id="MOXubO]VZn!MVxz6y7uw">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="baisser_lever_stylo" id="F5W=dw1$]*b[/L9h.ak^" x="407" y="22">
+    <field name="OP">penup</field>
+  </block>
+  <block type="baisser_lever_stylo" id="X/u[qE}j2bAgOJ%R=dBe" x="406" y="298">
+    <field name="OP">pendown</field>
+  </block>
+</xml>
