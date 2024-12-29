@@ -1,0 +1,27 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="procedures_call" id="D`xJ/|dzQgmB=}#O{+D$">
+        <mutation proccode="drapeau" argumentids="[]" warp="false"></mutation>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_definition" id="wm5P]hrQ#dV9(9ZQu)j]" x="299" y="24">
+    <statement name="custom_block">
+      <block type="procedures_prototype" id="z?_#3Tw]6cY7MGUP1FB;">
+        <mutation proccode="drapeau" argumentids="[]" argumentnames="[]" argumentdefaults="[]" warp="false"></mutation>
+      </block>
+    </statement>
+    <next>
+      <block type="avancer_reculer" id="aVUU#]`b}f!9g6H(%dy7">
+        <field name="OP">forward</field>
+        <value name="NAME">
+          <shadow type="math_number" id="42a@!~d%PqE^f=2G,zG3">
+            <field name="NUM"></field>
+          </shadow>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
