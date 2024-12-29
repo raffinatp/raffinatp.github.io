@@ -1,0 +1,118 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="af{X#IYkrhtx9=KRGcUw" islocal="false" iscloud="false">n</variable>
+    <variable type="" id="xG1QH:089Gi9gBvO}GW^" islocal="false" iscloud="false">cote</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="29" y="-12">
+    <next>
+      <block type="tortue_teleport" id="Mz=VBuE#=$|.;iqu*)56">
+        <value name="ABS">
+          <shadow type="math_number" id="sw{ICV|x.VZG!KshXh:#">
+            <field name="NUM">3</field>
+          </shadow>
+        </value>
+        <value name="ORD">
+          <shadow type="math_number" id="*{sS6Stz:$)hv`b-Z1QL">
+            <field name="NUM">-1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="WG$gp];i.J*[(Dhu+gx%">
+            <field name="VARIABLE" id="xG1QH:089Gi9gBvO}GW^" variabletype="">cote</field>
+            <value name="VALUE">
+              <shadow type="text" id="ZZ;AqThCboybqqI#SB|b">
+                <field name="TEXT">4</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="data_setvariableto" id="P[Bk^?Fw5x]*-Eu@mV+U">
+                <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+                <value name="VALUE">
+                  <shadow type="text" id="sQW(j?9d`.@(o%s?D-^i">
+                    <field name="TEXT">6</field>
+                  </shadow>
+                  <block type="ggb_valeur_de" id="8Ruo-_v5FHEFMKG6ne[I">
+                    <value name="NAME">
+                      <shadow type="text" id="dNk+.vFW8xX;GtY9Iq.(">
+                        <field name="TEXT">n</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="control_repeat" id="hjtS6Y:xHL?FVvw3+1d+">
+                    <value name="TIMES">
+                      <shadow type="math_whole_number" id="3xH9h!VR}u;Adv8DR]+D">
+                        <field name="NUM">4</field>
+                      </shadow>
+                      <block type="data_variable" id="!eDkQ#VJH4I@MPL}nD5G">
+                        <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+                      </block>
+                    </value>
+                    <statement name="SUBSTACK">
+                      <block type="control_repeat" id="UJdU|z(VkPr-FkM+?+]O">
+                        <value name="TIMES">
+                          <shadow type="math_whole_number" id="Ro0.Sz]MN{G6:q!al^X{">
+                            <field name="NUM">4</field>
+                          </shadow>
+                        </value>
+                        <statement name="SUBSTACK">
+                          <block type="var_gauche_droite" id="j$*onbt{Z3}(D/z/%m#0">
+                            <field name="OP">right</field>
+                            <value name="NAME">
+                              <shadow type="math_number" id="opZ;r-;8W,Vk5.T@{Q)l">
+                                <field name="NUM">90</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="avancer_reculer" id="/6!3gi+@Kg7hO4Joj.i(">
+                                <field name="OP">forward</field>
+                                <value name="NAME">
+                                  <shadow type="math_number" id="rPJPE.W1|g}!izo,tQXj">
+                                    <field name="NUM">50</field>
+                                  </shadow>
+                                  <block type="data_variable" id="spuy:HX)2emCgJ:D}Sh$">
+                                    <field name="VARIABLE" id="xG1QH:089Gi9gBvO}GW^" variabletype="">cote</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="var_gauche_droite" id="86LY42Ys1!G!I~7nn|]u">
+                            <field name="OP">right</field>
+                            <value name="NAME">
+                              <shadow type="math_number" id="q#cLAJ/Q?KTcNL{9=f{e">
+                                <field name="NUM">90</field>
+                              </shadow>
+                              <block type="operator_divide" id="T43y2bZlP8:DX#4)3o]|">
+                                <value name="NUM1">
+                                  <shadow type="math_number" id="8SU2/GQihXBXL6Yor5W/">
+                                    <field name="NUM">360</field>
+                                  </shadow>
+                                </value>
+                                <value name="NUM2">
+                                  <shadow type="math_number" id="wQG;d@5QWR)=idS9zWVV">
+                                    <field name="NUM"></field>
+                                  </shadow>
+                                  <block type="data_variable" id="]~v_DhYHK@#JdI%Y[HDq">
+                                    <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

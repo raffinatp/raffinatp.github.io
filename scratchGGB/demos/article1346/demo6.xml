@@ -1,0 +1,358 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="48" y="-152">
+    <next>
+      <block type="ggb_commande_2pts" id="eA)07/!/cGSxhQo%VjJ~">
+        <field name="OP">Segment</field>
+        <value name="NOM">
+          <shadow type="text" id="f^Oz2@.$^fTxq5u~gW:6">
+            <field name="TEXT">segPQ</field>
+          </shadow>
+        </value>
+        <value name="OBJ1">
+          <shadow type="text" id=",kk16Fm)jXc1EZC[D7~z">
+            <field name="TEXT">P</field>
+          </shadow>
+        </value>
+        <value name="OBJ2">
+          <shadow type="text" id="kNK?vq{9$N$v_;5$/#!k">
+            <field name="TEXT">Q</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="ggb_commande_2pts" id="m{qVHh1f%BlhAwC4;RLz">
+            <field name="OP">Circle</field>
+            <value name="NOM">
+              <shadow type="text" id="mq)lj_E?O$-gRoNNLe=*">
+                <field name="TEXT">cerPQ</field>
+              </shadow>
+            </value>
+            <value name="OBJ1">
+              <shadow type="text" id="!Z?RQXmacrsL]uY2)oJ%">
+                <field name="TEXT">P</field>
+              </shadow>
+            </value>
+            <value name="OBJ2">
+              <shadow type="text" id="~e*lIPF4uoqn_5{z3kul">
+                <field name="TEXT">Q</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="ggb_1_arg" id="(lbB(d4fgWwkh].cn#5x">
+                <field name="OP">Point</field>
+                <value name="NOM">
+                  <shadow type="text" id="yL!eV=9+T1Frc7r``=]O">
+                    <field name="TEXT">A</field>
+                  </shadow>
+                </value>
+                <value name="OBJ1">
+                  <shadow type="text" id="$x6Mq$Q@;-`0?;[[Q6M{">
+                    <field name="TEXT">segPQ</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="ggb_1_arg" id="``?fR,@lSsRwVFTY2aNc">
+                    <field name="OP">Point</field>
+                    <value name="NOM">
+                      <shadow type="text" id="oYZA@SRDIBOG{|7%E8Rq">
+                        <field name="TEXT">B</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ1">
+                      <shadow type="text" id="4|[t!5UV)dqoqI-}}5CS">
+                        <field name="TEXT">cerPQ</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="tortue_teleport" id="E$:I10_qGr]ZiiKd^ACS">
+                        <value name="ABS">
+                          <shadow type="math_number" id="]a!,bZ];t([QSwb]fdL#">
+                            <field name="NUM">3</field>
+                          </shadow>
+                          <block type="ggb_1_arg_fonct" id="AOo(5p%s/fC6wn[I0S*a">
+                            <field name="OP">coordX</field>
+                            <value name="OBJ1">
+                              <shadow type="text" id="o/Y%nDD7?PfP8kpO`C.Z">
+                                <field name="TEXT">A</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ORD">
+                          <shadow type="math_number" id="wXL`k2xBx8(Q,C`!w:3a">
+                            <field name="NUM">-1</field>
+                          </shadow>
+                          <block type="ggb_1_arg_fonct" id="Lflc(KdBPPv#,Fe::rsM">
+                            <field name="OP">coordY</field>
+                            <value name="OBJ1">
+                              <shadow type="text" id="_m1v[lM~yWSMuY5o.oey">
+                                <field name="TEXT">A</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="tortue_viser" id="c;)_^pzAycYJ],MM:E7?">
+                            <value name="ABS">
+                              <shadow type="math_number" id="nARM88wzGP$,b_J6[LAB">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="ggb_1_arg_fonct" id="QXwj9sPb`#?|L|j@uuK_">
+                                <field name="OP">coordX</field>
+                                <value name="OBJ1">
+                                  <shadow type="text" id="PKf!n6=%;aC9BnrzoS#q">
+                                    <field name="TEXT">Q</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ORD">
+                              <shadow type="math_number" id=":uRV[5;kDsK}4LSOEopD">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="ggb_1_arg_fonct" id="Jt,nSNzZbr4H03TXN`E[">
+                                <field name="OP">coordX</field>
+                                <value name="OBJ1">
+                                  <shadow type="text" id="8+=e,N3]r|#?)QL~`eq8">
+                                    <field name="TEXT">Q</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="couleur_remplissage" id="y9(|hdb,GZ1rUyd0]G~Q">
+                                <value name="COLOR">
+                                  <shadow type="colour_picker" id="pY,F}ta}YuoqNWE5#pKc">
+                                    <field name="COLOUR">#00ff00</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="procedures_call" id="4nfd[$Byse8vvEm!M/2h">
+                                    <mutation proccode="fusee" argumentids="[]" warp="false"></mutation>
+                                    <next>
+                                      <block type="tortue_teleport" id="u?Tx-?@];{wq;L5yHPyY">
+                                        <value name="ABS">
+                                          <shadow type="math_number" id="_eiA;`Xv!YKH;M^{.-iZ">
+                                            <field name="NUM">3</field>
+                                          </shadow>
+                                          <block type="ggb_1_arg_fonct" id="s/%WaK@i({J/*GWWF%k!">
+                                            <field name="OP">coordX</field>
+                                            <value name="OBJ1">
+                                              <shadow type="text" id="e.k7aAtNTF?e7!V+:nTz">
+                                                <field name="TEXT">B</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="ORD">
+                                          <shadow type="math_number" id="T^Kot3hFTAwqF@*LXeX,">
+                                            <field name="NUM">-1</field>
+                                          </shadow>
+                                          <block type="ggb_1_arg_fonct" id="bBU4~SB)tHSX?vM/9C{e">
+                                            <field name="OP">coordY</field>
+                                            <value name="OBJ1">
+                                              <shadow type="text" id="Jox!j{*14hShkE$vP@u9">
+                                                <field name="TEXT">B</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="tortue_viser" id="?wI3GU{`]N:QU~G#$k%%">
+                                            <value name="ABS">
+                                              <shadow type="math_number" id="-n(56Z-03H8){/d@+u-z">
+                                                <field name="NUM">0</field>
+                                              </shadow>
+                                              <block type="ggb_1_arg_fonct" id="OSN!AE@(o#*,zcBO|3bc">
+                                                <field name="OP">coordX</field>
+                                                <value name="OBJ1">
+                                                  <shadow type="text" id="8lmPRWuk_U#DDSG3MU@.">
+                                                    <field name="TEXT">P</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="ORD">
+                                              <shadow type="math_number" id="SR|x}X_{9SC08,U;1O2A">
+                                                <field name="NUM">0</field>
+                                              </shadow>
+                                              <block type="ggb_1_arg_fonct" id="EKdjs#*GzpxI[^t!8S;j">
+                                                <field name="OP">coordY</field>
+                                                <value name="OBJ1">
+                                                  <shadow type="text" id="kXr:U[am!2z}DGQf^S99">
+                                                    <field name="TEXT">P</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="var_gauche_droite" id="Fc|B-E_E|o@+Hg3xxq_#">
+                                                <field name="OP">right</field>
+                                                <value name="NAME">
+                                                  <shadow type="math_number" id=";sXs)Iaxi!0FHWiz@(X|">
+                                                    <field name="NUM">90</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="couleur_remplissage" id="),Onw1]UbyI?=|={k}SC">
+                                                    <value name="COLOR">
+                                                      <shadow type="colour_picker" id="Urfn[lf@,Pn@j)j{s)8)">
+                                                        <field name="COLOUR">#ff0000</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="procedures_call" id="4K53d|C[wH*.g_$_bYrr">
+                                                        <mutation proccode="fusee" argumentids="[]" warp="false"></mutation>
+                                                        <next>
+                                                          <block type="ggb_1_arg" id="#-k/lJ-wPyKQ2zGJ}i]6">
+                                                            <field name="OP">ggbApplet.setLabelVisible</field>
+                                                            <value name="NOM">
+                                                              <shadow type="text" id="[J^6^t7:2;i|/r6Z0X%2">
+                                                                <field name="TEXT">P</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <value name="OBJ1">
+                                                              <shadow type="text" id="]tgcn+lR8PA`NXO=v}DW">
+                                                                <field name="TEXT">1</field>
+                                                              </shadow>
+                                                            </value>
+                                                            <next>
+                                                              <block type="ggb_1_arg" id="=v(c2P8W/aQnI6:o{f(b">
+                                                                <field name="OP">ggbApplet.setLabelVisible</field>
+                                                                <value name="NOM">
+                                                                  <shadow type="text" id="$dZ3)|%oRP5;`[,pGr;*">
+                                                                    <field name="TEXT">Q</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <value name="OBJ1">
+                                                                  <shadow type="text" id="55i*7xLahWXwTR0bt`YR">
+                                                                    <field name="TEXT">1</field>
+                                                                  </shadow>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_definition" id="l`%9;moJj[.yVkHME}]b" x="653" y="-133">
+    <statement name="custom_block">
+      <block type="procedures_prototype" id="I|MX)mJI@P:*~3{b~yXy">
+        <mutation proccode="fusee" argumentids="[]" argumentnames="[]" argumentdefaults="[]" warp="false"></mutation>
+      </block>
+    </statement>
+    <next>
+      <block type="debut_fin_remplissage" id="sD4,4/U*3S2?t{_d[39Z">
+        <field name="OP">debut</field>
+        <next>
+          <block type="var_gauche_droite" id="CFzX;f{Ag|;#.wN[~?Y1">
+            <field name="OP">right</field>
+            <value name="NAME">
+              <shadow type="math_number" id="A=%_%!`T5EwcqSuP|0a?">
+                <field name="NUM">180</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="control_repeat" id="UJdU|z(VkPr-FkM+?+]O">
+                <value name="TIMES">
+                  <shadow type="math_whole_number" id="Ro0.Sz]MN{G6:q!al^X{">
+                    <field name="NUM">3</field>
+                  </shadow>
+                </value>
+                <statement name="SUBSTACK">
+                  <block type="avancer_reculer" id="/6!3gi+@Kg7hO4Joj.i(">
+                    <field name="OP">forward</field>
+                    <value name="NAME">
+                      <shadow type="math_number" id="rPJPE.W1|g}!izo,tQXj">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="var_gauche_droite" id="j$*onbt{Z3}(D/z/%m#0">
+                        <field name="OP">left</field>
+                        <value name="NAME">
+                          <shadow type="math_number" id="opZ;r-;8W,Vk5.T@{Q)l">
+                            <field name="NUM">90</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="var_gauche_droite" id="kJsyVY%YS,F?M%,WhQ2;">
+                    <field name="OP">right</field>
+                    <value name="NAME">
+                      <shadow type="math_number" id="NCM`8/|W-f0^F=daL12Y">
+                        <field name="NUM">60</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="control_repeat" id="P$hIClyVFLP}F{we5Uc4">
+                        <value name="TIMES">
+                          <shadow type="math_whole_number" id="QhI!NUlRHHWSb;7bOH-1">
+                            <field name="NUM">2</field>
+                          </shadow>
+                        </value>
+                        <statement name="SUBSTACK">
+                          <block type="avancer_reculer" id="%C~!Qt@@~61~Y?wyM%_r">
+                            <field name="OP">forward</field>
+                            <value name="NAME">
+                              <shadow type="math_number" id="I,;x+]eXB)/afw_1[7bE">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="var_gauche_droite" id="v!|WeZMOy@pLnm85`6b^">
+                                <field name="OP">left</field>
+                                <value name="NAME">
+                                  <shadow type="math_number" id="ZhXnyC-?Vlf%OCIs8f-J">
+                                    <field name="NUM">120</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="debut_fin_remplissage" id="HmzpB2aUuoE)BneB8RyK">
+                            <field name="OP">fin</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
