@@ -1,0 +1,39 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="ggb_couleur_remplissage" id="jSqM3^~{Z1w{i5ySUwu{">
+        <value name="OBJ1">
+          <shadow type="text" id=",O^|Z:zlORd.%$UArvhW">
+            <field name="TEXT">AB</field>
+          </shadow>
+        </value>
+        <value name="COLOR">
+          <shadow type="colour_picker" id="!;+17BDPu6CuKC,ZGnWJ">
+            <field name="COLOUR">#00ff00</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="ggb_commande_2pts" id="vJOo^Z-{Gg?0G7gNc2;j">
+            <field name="OP">Circle</field>
+            <value name="NOM">
+              <shadow type="text" id="cEk.?tgsWd8Xg~Ks}jS?">
+                <field name="TEXT">cerA</field>
+              </shadow>
+            </value>
+            <value name="OBJ1">
+              <shadow type="text" id="4?y.V|,~ZQu(mGGiuqYM">
+                <field name="TEXT">A</field>
+              </shadow>
+            </value>
+            <value name="OBJ2">
+              <shadow type="text" id="jd9Ui%EPO+PwBQ2X00;p">
+                <field name="TEXT">0.5</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

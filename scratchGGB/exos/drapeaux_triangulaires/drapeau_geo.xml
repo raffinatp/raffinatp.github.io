@@ -1,0 +1,210 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="ggb_point" id="Aw[=d}3l/1w7u5-/1g[2">
+        <value name="NOM">
+          <shadow type="text" id="){*zfx4!9TFOOTXO!(bA">
+            <field name="TEXT">A</field>
+          </shadow>
+        </value>
+        <value name="X">
+          <shadow type="math_number" id="|)^J)UM@b?:5%EE{Ep+Q">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="Y">
+          <shadow type="math_number" id="yxW^e?~Tikp[fSl.=:XP">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="ggb_point" id="wFr.W/zs|WVJDRSO.M-~">
+            <value name="NOM">
+              <shadow type="text" id="|Ipoj]~9o~u1MFoQTjtO">
+                <field name="TEXT">B</field>
+              </shadow>
+            </value>
+            <value name="X">
+              <shadow type="math_number" id="xc!1Xp;y91)sh;3|{IL}">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="Y">
+              <shadow type="math_number" id="DG+3:_0Tl:(L$=E%IiB+">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="ggb_point" id="eL]FhjDGwCofBaP|c6^D">
+                <value name="NOM">
+                  <shadow type="text" id=",2fjc4s}fKht9-?R%RpG">
+                    <field name="TEXT">C</field>
+                  </shadow>
+                </value>
+                <value name="X">
+                  <shadow type="math_number" id="z^[Z=8]+]8zhFgX+[eqR">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="Y">
+                  <shadow type="math_number" id="Li(I}S;@oOMT?R|RZ}qd">
+                    <field name="NUM">3</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="ggb_commande_2pts" id="DvDf`}N).p+atxG}GM3O">
+                    <field name="OP">Circle</field>
+                    <value name="NOM">
+                      <shadow type="text" id="f?HK=)q_wzati]+(,P3=">
+                        <field name="TEXT">cerB</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ1">
+                      <shadow type="text" id="8_5kopnJXb7kw%kaW%}=">
+                        <field name="TEXT">B</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ2">
+                      <shadow type="text" id="I6zF3Lx@vuga^[IM.H,#">
+                        <field name="TEXT">1</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="ggb_commande_2pts" id="cO}}}3gAA,,-;}YlQ?~P">
+                        <field name="OP">Circle</field>
+                        <value name="NOM">
+                          <shadow type="text" id="[{1h#|d)xuh;)+cTUO[Y">
+                            <field name="TEXT">cerC</field>
+                          </shadow>
+                        </value>
+                        <value name="OBJ1">
+                          <shadow type="text" id="}R:YAlb=?t#+gWV6%.1L">
+                            <field name="TEXT">C</field>
+                          </shadow>
+                        </value>
+                        <value name="OBJ2">
+                          <shadow type="text" id="sMwQt*WZXaDY~]y$qnmH">
+                            <field name="TEXT">1</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="ggb_intersections" id="oP2GEz$bQ_h@I[j9yiNc">
+                            <field name="OP">Intersect2</field>
+                            <value name="NOM">
+                              <shadow type="text" id=";O+pTf@?G{ffMH`/Sq1X">
+                                <field name="TEXT">D</field>
+                              </shadow>
+                            </value>
+                            <value name="OBJ1">
+                              <shadow type="text" id="[j:Qvn)UUX/$y??fa`TC">
+                                <field name="TEXT">cerB</field>
+                              </shadow>
+                            </value>
+                            <value name="OBJ2">
+                              <shadow type="text" id="ijhcQ~sIwCt_lOG`6h+b">
+                                <field name="TEXT">cerC</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="ggb_commande_2pts" id="[7CU1gPO)Y4RVU,B`W{Y">
+                                <field name="OP">Segment</field>
+                                <value name="NOM">
+                                  <shadow type="text" id="iS=sU~L0AI9#ST`1_N`k">
+                                    <field name="TEXT"></field>
+                                  </shadow>
+                                </value>
+                                <value name="OBJ1">
+                                  <shadow type="text" id="AH,%3yJrD+/@29Edr7+Z">
+                                    <field name="TEXT">A</field>
+                                  </shadow>
+                                </value>
+                                <value name="OBJ2">
+                                  <shadow type="text" id="EHibOf@;wJC5D`~nceLt">
+                                    <field name="TEXT">C</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="ggb_commande_2pts" id="u_u57LrWcUagW(ebh*PF">
+                                    <field name="OP">Segment</field>
+                                    <value name="NOM">
+                                      <shadow type="text" id="ChxTn0`M/-94pLsu(uHD">
+                                        <field name="TEXT"></field>
+                                      </shadow>
+                                    </value>
+                                    <value name="OBJ1">
+                                      <shadow type="text" id=",];1a]5]$2AU3(23.MU5">
+                                        <field name="TEXT">C</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="OBJ2">
+                                      <shadow type="text" id="}-~dGdakX`8fq-vhN1B;">
+                                        <field name="TEXT">D</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="ggb_commande_2pts" id="dv/Z+sg0[eT)4FDxZ)5~">
+                                        <field name="OP">Segment</field>
+                                        <value name="NOM">
+                                          <shadow type="text" id="jZPD|Aim|)$fgASIxZ~s">
+                                            <field name="TEXT"></field>
+                                          </shadow>
+                                        </value>
+                                        <value name="OBJ1">
+                                          <shadow type="text" id="HF.#%,6`XUOhxF5zB5@_">
+                                            <field name="TEXT">D</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="OBJ2">
+                                          <shadow type="text" id=",HT./G#6CQ8JUPfo9v1Y">
+                                            <field name="TEXT">B</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="ggb_couleur_remplissage" id="Gj|!u8fIb-%rCD=-G!A.">
+                                            <value name="OBJ1">
+                                              <shadow type="text" id="Y1)~;j[|r9E8Rn01nr#%">
+                                                <field name="TEXT">cerB</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="COLOR">
+                                              <shadow type="colour_picker" id="l`dzrWV:sc2kU1MkYQ)x">
+                                                <field name="COLOUR">#ff0000</field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="ggb_couleur_remplissage" id="|aojo7+YItPoa~7~tm]z">
+                                                <value name="OBJ1">
+                                                  <shadow type="text" id="Y%JZR+C1d(?Z2Ka/$R})">
+                                                    <field name="TEXT">cerC</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="COLOR">
+                                                  <shadow type="colour_picker" id="0nmoLJr8qKHmtdh#GedN">
+                                                    <field name="COLOUR">#ff0000</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

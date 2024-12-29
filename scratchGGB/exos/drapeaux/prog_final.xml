@@ -1,0 +1,63 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="couleur_remplissage" id="#u{3i9uA=~uoN)R/6Lme">
+        <value name="COLOR">
+          <shadow type="colour_picker" id="BN{WR$[Jd!K(-c,b/AE2">
+            <field name="COLOUR">#00ff00</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="avancer_reculer" id="ETW(0k^;Zb:bAg=k@f@j">
+            <field name="OP">forward</field>
+            <value name="NAME">
+              <shadow type="math_number" id="`:rnX$w^Hvf]_~Ysmiq,">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="control_repeat" id="wTFape1jTgW4lejtULs-">
+                <value name="TIMES">
+                  <shadow type="math_whole_number" id="+^u)i[4-)/+V_Qu@-0~7">
+                    <field name="NUM">4</field>
+                  </shadow>
+                </value>
+                <statement name="SUBSTACK">
+                  <block type="avancer_reculer" id="SPw-2z}$?^RaYTvoIYPN">
+                    <field name="OP">forward</field>
+                    <value name="NAME">
+                      <shadow type="math_number" id="nn`8wMeK|q.ZR;z*ux3}">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="var_gauche_droite" id="igVnhtMR,;sT@u*Sg)$%">
+                        <field name="OP">right</field>
+                        <value name="NAME">
+                          <shadow type="math_number" id="EbNXG%5(Gv=Lp=I;`/%!">
+                            <field name="NUM">90</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="avancer_reculer" id="9=d;b~AfqM/;MP:r;Ibi">
+                    <field name="OP">forward</field>
+                    <value name="NAME">
+                      <shadow type="math_number" id="FnWLOtPeVX1zC,+Z1av,">
+                        <field name="NUM">-2</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

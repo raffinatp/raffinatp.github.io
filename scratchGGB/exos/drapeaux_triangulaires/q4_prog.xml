@@ -1,0 +1,94 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="af{X#IYkrhtx9=KRGcUw" islocal="false" iscloud="false">n</variable>
+    <variable type="" id="xG1QH:089Gi9gBvO}GW^" islocal="false" iscloud="false">cote</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="19" y="-3">
+    <next>
+      <block type="data_setvariableto" id="P[Bk^?Fw5x]*-Eu@mV+U">
+        <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="sQW(j?9d`.@(o%s?D-^i">
+            <field name="TEXT">6</field>
+          </shadow>
+          <block type="ggb_valeur_de" id="8Ruo-_v5FHEFMKG6ne[I">
+            <value name="NAME">
+              <shadow type="text" id="dNk+.vFW8xX;GtY9Iq.(">
+                <field name="TEXT">n</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="control_repeat" id="DZU;JlJ*LrHy?jA@*yoy">
+            <value name="TIMES">
+              <shadow type="math_whole_number" id="Nf97;Dn52`TpWz:UV[?V">
+                <field name="NUM"></field>
+              </shadow>
+              <block type="data_variable" id="bN#-wPaOQg_Z525(57ou">
+                <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+              </block>
+            </value>
+            <statement name="SUBSTACK">
+              <block type="procedures_call" id="+f[S.+llgz5a37#bfUuG">
+                <mutation proccode="drapeau" argumentids="[]" warp="false"></mutation>
+                <next>
+                  <block type="var_gauche_droite" id="v[y^-7Zllg_I+}]4r{qo">
+                    <field name="OP">left</field>
+                    <value name="NAME">
+                      <shadow type="math_number" id="~O9}y_FuNZ.3*98V`v)m">
+                        <field name="NUM">90</field>
+                      </shadow>
+                      <block type="operator_divide" id="AEjzK_%DDx{a1xOt]lPj">
+                        <value name="NUM1">
+                          <shadow type="math_number" id="T]jXCbw=-GFW.fJt}sHD">
+                            <field name="NUM">360</field>
+                          </shadow>
+                        </value>
+                        <value name="NUM2">
+                          <shadow type="math_number" id="SI=yDrAkI7H?L7nh7u(^">
+                            <field name="NUM"></field>
+                          </shadow>
+                          <block type="data_variable" id="Y9c3ne%!i[T}1t$2Bp~X">
+                            <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_definition" id="wp6KiQZ%:VFLm^/I)ffc" x="11" y="339">
+    <statement name="custom_block">
+      <block type="procedures_prototype" id="3s.GOGdZX:AgyM)5CtF5">
+        <mutation proccode="drapeau" argumentids="[]" argumentnames="[]" argumentdefaults="[]" warp="false"></mutation>
+      </block>
+    </statement>
+    <next>
+      <block type="avancer_reculer" id="-7U2D?oH]MK@JPEk#Yv3">
+        <field name="OP">forward</field>
+        <value name="NAME">
+          <shadow type="math_number" id="MOXubO]VZn!MVxz6y7uw">
+            <field name="NUM">2</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="avancer_reculer" id="Jo4]nj9jdF}JFpGTRN:!">
+            <field name="OP">backward</field>
+            <value name="NAME">
+              <shadow type="math_number" id="W63d$B/(9av!Gg[Mp~h]">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

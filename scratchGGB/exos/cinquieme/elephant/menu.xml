@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<xml id="toolbox" style="display: none">
+    <category name="Indications" id="demos" colour="#FFFF00" secondaryColour="#FFFF00">
+			<button text="Etape 1" callbackKey="q1">
+<![CDATA[
+remplace C par E pour le cercle : la question GeoGebra change...
+]]>
+			</button>
+			<button text="Etape 2" callbackKey="q2">
+<![CDATA[
+ajoute un bloc pour le cercle de centre F (de rayon 1)
+]]>
+			</button>
+			<button text="..." callbackKey="q3"> 
+<![CDATA[
+complète <a target="_blank" href="http://juliette.hernando.free.fr/geogebra/elephant.pdf">l'éléphant</a> avec des blocs : voir <a target="_blank" href="https://youtu.be/3NP5p9XqykA">vidéo</a>
+]]>
+			</button>
+	</category>
+    <category name="Points" id="ggbPoints" colour="#FF6680" secondaryColour="#FF4D6A" iconURI="./js/scratch/img/Mode_complexnumber.png" showStatusButton="false">
+            <block type="ggb_intersections">
+				<field name="OP">Intersection</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_commande_2pts">
+				<field name="OP">Midpoint</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+	</category>
+    <category name="Droites" id="ggbDroites" colour="#FF6680" secondaryColour="#FF4D6A" iconURI="./js/scratch/img/Mode_join.png" showStatusButton="false">
+            <block type="ggb_commande_2pts">
+				<field name="OP">Segment</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_commande_2pts">
+				<field name="OP">Line</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_commande_2pts">
+				<field name="OP">PerpendicularLine</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_commande_2pts">
+				<field name="OP"> Line</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+	</category>
+    <category name="Cercles" id="ggbCercles" colour="#FF6680" secondaryColour="#FF4D6A" iconURI="./js/scratch/img/Mode_circle2.png" showStatusButton="false">
+            <block type="ggb_commande_2pts">
+				<field name="OP">Circle</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_commande_2pts">
+				<field name="OP">Semicircle</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_3_arg">
+				<field name="OP">CircleArc</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ3">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+	</category>
+    <category name="Autres..." id="ggbDivers" colour="#FF6680" secondaryColour="#FF4D6A" iconURI="./js/scratch/img/Mode_zoomIn.png" showStatusButton="false">
+			<block type="ggb_couleur_remplissage">
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="COLOR">
+					<shadow type="colour_picker">
+						<field name="COLOUR">#00ff00</field>
+					</shadow>
+				</value>
+			</block>
+    </category>
+</xml>
