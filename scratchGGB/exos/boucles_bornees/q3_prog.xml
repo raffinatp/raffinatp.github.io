@@ -1,0 +1,63 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="oU71`hS~:9^3@Mm#W/=Z" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="data_setvariableto" id="7g]9=o2,]Cd^V:Hh)`+G">
+        <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="8W/Z:lEJ!R+=1)fkK|uh">
+            <field name="TEXT">1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="control_repeat" id="Fx(+J/.BEhOhUQi!*`(6">
+            <value name="TIMES">
+              <shadow type="math_whole_number" id="*nEq[i})0XZ`L^Z*=.N5">
+                <field name="NUM">10</field>
+              </shadow>
+            </value>
+            <statement name="SUBSTACK">
+              <block type="ggb_setCell" id="8R)HbC1NU.T_X/]m5xP5">
+                <value name="col">
+                  <shadow type="text" id="_$1._wpH$X.iiK3VCKe_">
+                    <field name="TEXT">A</field>
+                  </shadow>
+                </value>
+                <value name="lig">
+                  <shadow type="math_number" id="=Ja]4q0a|XBaC~]SjLhX">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="data_variable" id="-$KaATJ6uLCa6[f6XJ!i">
+                    <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+                  </block>
+                </value>
+                <value name="valeur">
+                  <shadow type="text" id="Jy-*uJ)ueU7-AL3%35I8">
+                    <field name="TEXT">10</field>
+                  </shadow>
+                  <block type="data_variable" id="UIZjb=`jRsz:a#q[XXbm">
+                    <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="data_changevariableby" id="?vXE(cOLR^OdRnF49S_G">
+                    <field name="OP">+</field>
+                    <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+                    <value name="VALUE">
+                      <shadow type="math_number" id="2jAkLP@WryhyGEXE@(Wc">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

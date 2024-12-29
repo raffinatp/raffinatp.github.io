@@ -1,0 +1,443 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="2!a3cIzkWB?AEwSCk#tN" islocal="false" iscloud="false">milieu</variable>
+    <variable type="" id="G+XHpo1o{[t`7y~p6w}l" islocal="false" iscloud="false">seg</variable>
+    <variable type="" id="3L@Wl-o%?R=~;#^!|^g$" islocal="false" iscloud="false">droite</variable>
+    <variable type="" id="T+s]1O))+}ri?{`xdWSi" islocal="false" iscloud="false">medAB</variable>
+    <variable type="" id="[8$0ZfKg9HgqaLY[|?Qe" islocal="false" iscloud="false">medAC</variable>
+    <variable type="" id="1E6z!mxyS4^jK8nt(4Tl" islocal="false" iscloud="false">centre</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="ggb_point" id="+)aqP9]S~0*JRP,BNEiB">
+        <value name="NOM">
+          <shadow type="text" id="9-|nn6N^0dYdVBM!PR;i">
+            <field name="TEXT">A</field>
+          </shadow>
+        </value>
+        <value name="X">
+          <shadow type="math_number" id="wQlJ66Kd9Qnw6MVAjI+/">
+            <field name="NUM">-5</field>
+          </shadow>
+        </value>
+        <value name="Y">
+          <shadow type="math_number" id=";1qvGU77u%D=as^LIXTm">
+            <field name="NUM">2</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="ggb_point" id="0Nh;K6ZB7.P?w|z[^fOv">
+            <value name="NOM">
+              <shadow type="text" id=";gxo79pe9S%[`X4:C8Ng">
+                <field name="TEXT">C</field>
+              </shadow>
+            </value>
+            <value name="X">
+              <shadow type="math_number" id="f0W6f^_9Y7R$i[Q|Wn?|">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <value name="Y">
+              <shadow type="math_number" id="dP8C^y[#L2ZAdgid(H{z">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="ggb_point" id="ZS5Rp;Lr]4yt;o1d6UO(">
+                <value name="NOM">
+                  <shadow type="text" id="}KiDZHpP_`!sk(/H+Km^">
+                    <field name="TEXT">P</field>
+                  </shadow>
+                </value>
+                <value name="X">
+                  <shadow type="math_number" id="!RXgOvlL%FZ!$zm?~3MJ">
+                    <field name="NUM">-3</field>
+                  </shadow>
+                </value>
+                <value name="Y">
+                  <shadow type="math_number" id="iIk(9)y!6IP8FqXhzi,9">
+                    <field name="NUM">-3</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="procedures_call" id="*Zi8^oC*:j*:/=T;`~]D">
+                    <mutation proccode="cercle_circonscrit %s %s %s" argumentids="[&quot;ARG1&quot;,&quot;ARG2&quot;,&quot;ARG3&quot;]" warp="false"></mutation>
+                    <value name="ARG1">
+                      <shadow type="text" id="g?2lyjr(L3}@c^O7;DYg">
+                        <field name="TEXT">A</field>
+                      </shadow>
+                    </value>
+                    <value name="ARG2">
+                      <shadow type="text" id="Q5Uc1V3U1G]Nvaa4yI})">
+                        <field name="TEXT">C</field>
+                      </shadow>
+                    </value>
+                    <value name="ARG3">
+                      <shadow type="text" id="59rr)N2n*6BRoAI|Ym9r">
+                        <field name="TEXT">P</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_definition" id=";h`hfXQ-uI+KIMepzx@`" x="399" y="17">
+    <statement name="custom_block">
+      <block type="procedures_prototype" id="Qx.0]#|-Fw6oG|~n#smt">
+        <mutation proccode="Mediatrice %s %s" argumentids="[&quot;ARG1&quot;,&quot;ARG2&quot;]" argumentnames="[&quot;A&quot;,&quot;B&quot;]" argumentdefaults="[&quot;&quot;,&quot;&quot;]" warp="false"></mutation>
+        <value name="ARG1">
+          <shadow type="argument_reporter_string_number" id=":x*(tNw@iF0*mQ}#M0k}">
+            <field name="VALUE">A</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow type="argument_reporter_string_number" id="#ZDjy$u|@^CRXE|5A$@n">
+            <field name="VALUE">B</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="data_setvariableto" id="2Y=jU]Gw]Gn[uT`Qns/H">
+        <field name="VARIABLE" id="2!a3cIzkWB?AEwSCk#tN" variabletype="">milieu</field>
+        <value name="VALUE">
+          <shadow type="text" id="9sxB^Z)4At{aXcL_$#?e">
+            <field name="TEXT">0</field>
+          </shadow>
+          <block type="ggb_1_arg_fonct" id="csNY@_iE.}4C$j#W|pS/">
+            <field name="OP">nouveau</field>
+            <value name="OBJ1">
+              <shadow type="text" id="V;F0Y041z$bJk~5GRC!{">
+                <field name="TEXT">M</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="PSQrmCc[bfQfCt,QmR98">
+            <field name="VARIABLE" id="G+XHpo1o{[t`7y~p6w}l" variabletype="">seg</field>
+            <value name="VALUE">
+              <shadow type="text" id="-/9kRHvwFlD;l0G|^O}_">
+                <field name="TEXT">0</field>
+              </shadow>
+              <block type="ggb_1_arg_fonct" id="f|X+A`MQFfSp$/s^Uc|Q">
+                <field name="OP">nouveau</field>
+                <value name="OBJ1">
+                  <shadow type="text" id="2k6r$Nf?HC_+9{m:2/C~">
+                    <field name="TEXT">s</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="data_setvariableto" id="-}C=)$%9Bkx^}!idhbpq">
+                <field name="VARIABLE" id="3L@Wl-o%?R=~;#^!|^g$" variabletype="">droite</field>
+                <value name="VALUE">
+                  <shadow type="text" id="Mpw?~)/}=1w6#KjR#w~W">
+                    <field name="TEXT">0</field>
+                  </shadow>
+                  <block type="ggb_1_arg_fonct" id="[Ydtr8{X7OCOla~3S001">
+                    <field name="OP">nouveau</field>
+                    <value name="OBJ1">
+                      <shadow type="text" id="D@M~F+Lq6k!O;j3^L)2)">
+                        <field name="TEXT">d</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="ggb_commande_2pts" id="b1WXl~#Yr7tU!`@SsvM:">
+                    <field name="OP">Midpoint</field>
+                    <value name="NOM">
+                      <shadow type="text" id="x.~7pBMY{_Zl^[qV:1JC">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="data_variable" id="*y,1x.3JBZxo[/yT)]57">
+                        <field name="VARIABLE" id="2!a3cIzkWB?AEwSCk#tN" variabletype="">milieu</field>
+                      </block>
+                    </value>
+                    <value name="OBJ1">
+                      <shadow type="text" id="9/SCT%,k}gs_TkX:=CDk">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="argument_reporter_string_number" id="#C*dEB.27!xN||@ai3p2">
+                        <field name="VALUE">A</field>
+                      </block>
+                    </value>
+                    <value name="OBJ2">
+                      <shadow type="text" id="9WA8K^-Rn(`dg-t5/bS^">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="argument_reporter_string_number" id="H`/As8.mpvSJ]?Y;BfwJ">
+                        <field name="VALUE">B</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="ggb_commande_2pts" id="1oEcb,aLYxJvHF!,Dq5b">
+                        <field name="OP">Segment</field>
+                        <value name="NOM">
+                          <shadow type="text" id="p?TW]gSJ`L}f`JY.i9;(">
+                            <field name="TEXT"></field>
+                          </shadow>
+                          <block type="data_variable" id="jX.jbhN%We#Nlb,(BXmj">
+                            <field name="VARIABLE" id="G+XHpo1o{[t`7y~p6w}l" variabletype="">seg</field>
+                          </block>
+                        </value>
+                        <value name="OBJ1">
+                          <shadow type="text" id="i9o61kmS-`5}N:aQsqaK">
+                            <field name="TEXT"></field>
+                          </shadow>
+                          <block type="argument_reporter_string_number" id="2d4$I{L,xfJ}!DDDu`+S">
+                            <field name="VALUE">A</field>
+                          </block>
+                        </value>
+                        <value name="OBJ2">
+                          <shadow type="text" id="+MtFL#E@y6F^/x[GhlCc">
+                            <field name="TEXT"></field>
+                          </shadow>
+                          <block type="argument_reporter_string_number" id="es34{G|uO1/!WCF~g%YO">
+                            <field name="VALUE">B</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="ggb_commande_2pts" id="p3l)Ey/mv6{,B1:5M7]%">
+                            <field name="OP">PerpendicularLine</field>
+                            <value name="NOM">
+                              <shadow type="text" id="PajxWZas0i%+Tf$Wz(?b">
+                                <field name="TEXT"></field>
+                              </shadow>
+                              <block type="data_variable" id="X#f)vaTfL1bp+`C4vX?h">
+                                <field name="VARIABLE" id="3L@Wl-o%?R=~;#^!|^g$" variabletype="">droite</field>
+                              </block>
+                            </value>
+                            <value name="OBJ1">
+                              <shadow type="text" id="Nm+Re.AL^Wy2T5/7mwt6">
+                                <field name="TEXT"></field>
+                              </shadow>
+                              <block type="data_variable" id="[TJ#$^7V,V$W%VOWnfY1">
+                                <field name="VARIABLE" id="2!a3cIzkWB?AEwSCk#tN" variabletype="">milieu</field>
+                              </block>
+                            </value>
+                            <value name="OBJ2">
+                              <shadow type="text" id="V2NgfF`|7UaIXjL`eSD[">
+                                <field name="TEXT"></field>
+                              </shadow>
+                              <block type="data_variable" id="s^(X|1el_[-|_I9R$c0G">
+                                <field name="VARIABLE" id="G+XHpo1o{[t`7y~p6w}l" variabletype="">seg</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="ggb_1_arg" id="3B,V7eT=f9P@?,*hoq8|">
+                                <field name="OP">ggbApplet.setVisible</field>
+                                <value name="NOM">
+                                  <shadow type="text" id="xx+Cgg#u$)]}i{#G]yp^">
+                                    <field name="TEXT"></field>
+                                  </shadow>
+                                  <block type="data_variable" id="pQd0*|WJLvi+=SJBQ@`G">
+                                    <field name="VARIABLE" id="2!a3cIzkWB?AEwSCk#tN" variabletype="">milieu</field>
+                                  </block>
+                                </value>
+                                <value name="OBJ1">
+                                  <shadow type="text" id="9OKo2TPymSZsHL.zY8qJ">
+                                    <field name="TEXT">0</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="ggb_1_arg" id="@WjXIe7S[ymP)5FA|X}|">
+                                    <field name="OP">ggbApplet.setVisible</field>
+                                    <value name="NOM">
+                                      <shadow type="text" id="Kcl=hmE2-b`OsFO=f#l7">
+                                        <field name="TEXT"></field>
+                                      </shadow>
+                                      <block type="data_variable" id="?n;ja%(Qh,~_zrW~b2X+">
+                                        <field name="VARIABLE" id="G+XHpo1o{[t`7y~p6w}l" variabletype="">seg</field>
+                                      </block>
+                                    </value>
+                                    <value name="OBJ1">
+                                      <shadow type="text" id="WU`f^8h@MEAxGL5k`,4=">
+                                        <field name="TEXT">0</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="sofuspy_sortie" id="]|5J;^`Z6Wncq=3y(Vhg">
+                                        <field name="OP">renvoyer</field>
+                                        <field name="code">droite</field>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_definition" id="EbY^fbO5FSX-]1H3N7Bt" x="3" y="295">
+    <statement name="custom_block">
+      <block type="procedures_prototype" id="5@8|x=l(lM!/N3W91oGb">
+        <mutation proccode="cercle_circonscrit %s %s %s" argumentids="[&quot;ARG1&quot;,&quot;ARG2&quot;,&quot;ARG3&quot;]" argumentnames="[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;]" argumentdefaults="[&quot;&quot;,&quot;&quot;,&quot;&quot;]" warp="false"></mutation>
+        <value name="ARG1">
+          <shadow type="argument_reporter_string_number" id="U+aj2#0C}:d?d22/@Q((">
+            <field name="VALUE">A</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow type="argument_reporter_string_number" id="T*DS.mImDJDdhv.G5#ku">
+            <field name="VALUE">B</field>
+          </shadow>
+        </value>
+        <value name="ARG3">
+          <shadow type="argument_reporter_string_number" id="Oy/T8q%Er5n(CYt4HJds">
+            <field name="VALUE">C</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="data_setvariableto" id="0c3a%)IKgymSR;/pR_k#">
+        <field name="VARIABLE" id="T+s]1O))+}ri?{`xdWSi" variabletype="">medAB</field>
+        <value name="VALUE">
+          <shadow type="text" id="b+KX!B$U4/KMo4X?r;id">
+            <field name="TEXT"></field>
+          </shadow>
+          <block type="procedures_call_return" id="W[}K{QX2A?*//OxlBm%{">
+            <mutation proccode="Mediatrice %s %s" argumentids="[&quot;ARG1&quot;,&quot;ARG2&quot;]" warp="false"></mutation>
+            <value name="ARG1">
+              <shadow type="text" id="l[C1r1T)*q3(X.rQ75J7">
+                <field name="TEXT"></field>
+              </shadow>
+              <block type="argument_reporter_string_number" id="DO2|bJQ9n$bZKVcn0cOR">
+                <field name="VALUE">A</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <shadow type="text" id="9Nmg]}5$4{yyfG1R):|9">
+                <field name="TEXT"></field>
+              </shadow>
+              <block type="argument_reporter_string_number" id="BSS@5.ektBq3NhsKWVH(">
+                <field name="VALUE">B</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="mye@njM6*D}$W]T?l.fd">
+            <field name="VARIABLE" id="[8$0ZfKg9HgqaLY[|?Qe" variabletype="">medAC</field>
+            <value name="VALUE">
+              <shadow type="text" id="Mj34My21*3]S#4+T:]`Z">
+                <field name="TEXT"></field>
+              </shadow>
+              <block type="procedures_call_return" id="8/[rLL{p-Q(,HsA:e_UE">
+                <mutation proccode="Mediatrice %s %s" argumentids="[&quot;ARG1&quot;,&quot;ARG2&quot;]" warp="false"></mutation>
+                <value name="ARG1">
+                  <shadow type="text" id="f_3nX`$n]YovB4!H;lJQ">
+                    <field name="TEXT"></field>
+                  </shadow>
+                </value>
+                <value name="ARG2">
+                  <shadow type="text" id="2kVN+Y@[V7nYqdIO|Pk2">
+                    <field name="TEXT"></field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="data_setvariableto" id="2BB.Q4kQO3+a59`QPg*Y">
+                <field name="VARIABLE" id="1E6z!mxyS4^jK8nt(4Tl" variabletype="">centre</field>
+                <value name="VALUE">
+                  <shadow type="text" id="MxrVi3?jEef^^5x,?M/*">
+                    <field name="TEXT">0</field>
+                  </shadow>
+                  <block type="ggb_1_arg_fonct" id="D@uko~HL1L0U^;5eG[%5">
+                    <field name="OP">nouveau</field>
+                    <value name="OBJ1">
+                      <shadow type="text" id="~9!z_BM(~9;/1|/*WhSk">
+                        <field name="TEXT">P</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="ggb_intersections" id="3N?@pvh]L7(6;kZblLBw">
+                    <field name="OP">Intersection</field>
+                    <value name="NOM">
+                      <shadow type="text" id="_eeMZ4jTk4nM2;!{EwGh">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="data_variable" id="Z~-qSb{|h6u}g-*uPjl)">
+                        <field name="VARIABLE" id="1E6z!mxyS4^jK8nt(4Tl" variabletype="">centre</field>
+                      </block>
+                    </value>
+                    <value name="OBJ1">
+                      <shadow type="text" id="Y+8RHgi#Q(=97$282X,p">
+                        <field name="TEXT"></field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ2">
+                      <shadow type="text" id="h1AHn:x5c+J4]QfLXM3d">
+                        <field name="TEXT"></field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="ggb_commande_2pts" id="t7evY+PwL6Y.GLWgRh;Y">
+                        <field name="OP">Circle</field>
+                        <value name="NOM">
+                          <shadow type="text" id="V5,fDBxbrfHqv0*cJ`pB">
+                            <field name="TEXT"></field>
+                          </shadow>
+                        </value>
+                        <value name="OBJ1">
+                          <shadow type="text" id="(7T|r#e{L)hMB8iV]m21">
+                            <field name="TEXT"></field>
+                          </shadow>
+                        </value>
+                        <value name="OBJ2">
+                          <shadow type="text" id="DFPEEXYt1)VrmN;LT|O#">
+                            <field name="TEXT"></field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="ggb_commande_2pts" id=".u4QR4jWxzybyYgu:8Ja" x="0" y="1160">
+    <field name="OP">Circle</field>
+    <value name="NOM">
+      <shadow type="text" id="y1rB+PB6)k!Ukf#Qo3R!">
+        <field name="TEXT"></field>
+      </shadow>
+    </value>
+    <value name="OBJ1">
+      <shadow type="text" id="5/Oi56ot7pM}S#29h.Ew">
+        <field name="TEXT">P</field>
+      </shadow>
+    </value>
+    <value name="OBJ2">
+      <shadow type="text" id="w:/m3wM:eFK*qEjU`vV^">
+        <field name="TEXT"></field>
+      </shadow>
+    </value>
+  </block>
+</xml>
