@@ -1,0 +1,136 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="]buA{XjYf-#bmIl;tRL+" islocal="false" iscloud="false">ligne</variable>
+    <variable type="" id="dWrYK*}EJETch@JLXEHB" islocal="false" iscloud="false">Apayer</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="data_setvariableto" id="]loqU*ksx[f#$X^a,29,">
+        <field name="VARIABLE" id="]buA{XjYf-#bmIl;tRL+" variabletype="">ligne</field>
+        <value name="VALUE">
+          <shadow type="text" id="~h!xKpx[B%JiXYaLQ+(Q">
+            <field name="TEXT">2</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="q8uZ0YcK+)tBjv-)R)[Y">
+            <field name="VARIABLE" id="dWrYK*}EJETch@JLXEHB" variabletype="">Apayer</field>
+            <value name="VALUE">
+              <shadow type="text" id="|V]}GaeHvlT.+{d#]TOy">
+                <field name="TEXT">0</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="control_repeat" id="4EN*+yu_~1E}{35ydzH;">
+                <value name="TIMES">
+                  <shadow type="math_whole_number" id="-/r[SI@aCqa!bR,J6,Ow">
+                    <field name="NUM">5</field>
+                  </shadow>
+                </value>
+                <statement name="SUBSTACK">
+                  <block type="ggb_1_arg" id="}C~T:E7ih~nxKw|Wj!b]">
+                    <field name="OP">fixer_cellule</field>
+                    <comment id="e3[hBMM`I`8u~l=KJ8oJ" pinned="true" h="94" w="133" x="682" y="157" minimized="false">A compléter</comment>
+                    <value name="NOM">
+                      <shadow type="text" id="MO5$#6un#_AeK=,9#e*9">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="operator_join" id="TPQU.Yrcc]6A-!%Wg69n">
+                        <value name="STRING1">
+                          <shadow type="text" id="Hksy75vjLg?Ph=6pLE-u">
+                            <field name="TEXT">D</field>
+                          </shadow>
+                        </value>
+                        <value name="STRING2">
+                          <shadow type="text" id="k!ZocU^iG)(){4p!e*y`">
+                            <field name="TEXT"></field>
+                          </shadow>
+                          <block type="data_variable" id="#JR54Kq;F2P)^)h8S?}_">
+                            <field name="VARIABLE" id="]buA{XjYf-#bmIl;tRL+" variabletype="">ligne</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="OBJ1">
+                      <shadow type="text" id="9V}ZMl^3j,em;iwJ;K#]">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="operator_multiply" id="fM:!Nc5x${,:!?f9_f=t">
+                        <value name="NUM1">
+                          <shadow type="math_number" id="[8$**:9|ztYE!/C(#Un1">
+                            <field name="NUM"></field>
+                          </shadow>
+                        </value>
+                        <value name="NUM2">
+                          <shadow type="math_number" id="nQM3B|XzTa%J-5alP^FD">
+                            <field name="NUM"></field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="data_changevariableby" id="T3Hj)n2JrC8JC)03P%P-">
+                        <field name="OP">+</field>
+                        <field name="VARIABLE" id="dWrYK*}EJETch@JLXEHB" variabletype="">Apayer</field>
+                        <comment id="*.uocoZ[YpvN[65[i]S3" pinned="true" h="94" w="129" x="491" y="275" minimized="false">A compléter</comment>
+                        <value name="VALUE">
+                          <shadow type="math_number" id="-SNu#xsxJ=CO?:+JHT=S">
+                            <field name="NUM"></field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="data_changevariableby" id="?nCFZHCB0FeU}o-hxxom">
+                            <field name="OP">+</field>
+                            <field name="VARIABLE" id="]buA{XjYf-#bmIl;tRL+" variabletype="">ligne</field>
+                            <value name="VALUE">
+                              <shadow type="math_number" id="p,mY_]sM0N9CuI9P=AHL">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="ggb_1_arg" id="(fHK3GGswU4R5*I8Y5*(">
+                    <field name="OP">fixer_cellule</field>
+                    <value name="NOM">
+                      <shadow type="text" id="g9XDdqty1[lSaZX#{(rY">
+                        <field name="TEXT">D7</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ1">
+                      <shadow type="text" id="HfM0*sbiI8UAzr;]CWM3">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="data_variable" id="K[ArVG^]4hxGss!mU(0J">
+                        <field name="VARIABLE" id="dWrYK*}EJETch@JLXEHB" variabletype="">Apayer</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="ggb_valeur_de" id="jv/~:K)u]Me0Li3F,am5" x="439" y="49">
+    <value name="NAME">
+      <shadow type="text" id="[HDj]NxLPMz2NrU{]{FX">
+        <field name="TEXT"></field>
+      </shadow>
+    </value>
+  </block>
+  <block type="ggb_valeur_de" id="{t`vJ.Pj81U?pt%d(G(+" x="438" y="117">
+    <value name="NAME">
+      <shadow type="text" id="j}VYoRb-c%,eLQ|(:_-B">
+        <field name="TEXT"></field>
+      </shadow>
+    </value>
+  </block>
+</xml>

@@ -1,0 +1,19 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="oU71`hS~:9^3@Mm#W/=Z" islocal="false" iscloud="false">a</variable>
+    <variable type="" id="rX=2n/`s+62xFEF;M~|E" islocal="false" iscloud="false">b</variable>
+    <variable type="" id="$^eaF6;H2]OT$Q]e/dPC" islocal="false" iscloud="false">c</variable>
+    <variable type="" id="^G7R:uuTHz+v%0uE={.u" islocal="false" iscloud="false">maximum</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="control_repeat" id="Fx(+J/.BEhOhUQi!*`(6">
+        <value name="TIMES">
+          <shadow type="math_whole_number" id="*nEq[i})0XZ`L^Z*=.N5">
+            <field name="NUM"></field>
+          </shadow>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>

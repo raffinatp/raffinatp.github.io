@@ -1,0 +1,61 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="oU71`hS~:9^3@Mm#W/=Z" islocal="false" iscloud="false">rayon</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="data_setvariableto" id="c-|G}8+@in~8NzWli]Il">
+        <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">rayon</field>
+        <comment id="p*Os^$o#/4z5bP}X!v`o" pinned="true" h="90.66666412353516" w="137.3333740234375" x="245" y="-5.333333333333329" minimized="false">A compléter</comment>
+        <value name="VALUE">
+          <shadow type="text" id="L5;S][c+2F{Y=PNNfAf2">
+            <field name="TEXT"></field>
+          </shadow>
+        </value>
+        <next>
+          <block type="control_repeat" id="RmDOz7i4p!NZ7Tf;%Bbo">
+            <comment id="p]L.,*:G.ZfVV*F3(3{6" pinned="true" h="89.33332824707031" w="134.66656494140625" x="352" y="90.66666666666666" minimized="false">A compléter</comment>
+            <value name="TIMES">
+              <shadow type="math_whole_number" id=":agTd%!CMU4gvz0)~!m{">
+                <field name="NUM"></field>
+              </shadow>
+            </value>
+            <statement name="SUBSTACK">
+              <block type="ggb_commande_2pts" id="U2zATB6jx0KTmfw3N#L~">
+                <field name="OP">Circle</field>
+                <value name="NOM">
+                  <shadow type="text" id="PO_VqoKD(u[UT#fMo_:b">
+                    <field name="TEXT"></field>
+                  </shadow>
+                </value>
+                <value name="OBJ1">
+                  <shadow type="text" id="y2yqHk@g}a:ZaeP!bSjH">
+                    <field name="TEXT">A</field>
+                  </shadow>
+                </value>
+                <value name="OBJ2">
+                  <shadow type="text" id="7X%`0Bwk{9I9VkL`]a%g">
+                    <field name="TEXT"></field>
+                  </shadow>
+                  <block type="data_variable" id="hmfPC[$ooqvx7%hee9t.">
+                    <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">rayon</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="data_changevariableby" id="u%hd;?WPvjSR1H%.yP9I" x="55" y="271">
+    <field name="OP">+</field>
+    <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">rayon</field>
+    <comment id="cubN(U{`|(@_P0Nj2!3)" pinned="true" h="90.66668701171875" w="216" x="249" y="338.6666666666667" minimized="false">A compléter et à déplacer</comment>
+    <value name="VALUE">
+      <shadow type="math_number" id="in`D_Cg@-6lr,03KTg=q">
+        <field name="NUM"></field>
+      </shadow>
+    </value>
+  </block>
+</xml>
