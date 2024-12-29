@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Scratch et Geogebra</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html, body {
+            height: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding:0;
+            margin: 0;
+            overflow: auto;                           
+        }
+        .page-container { margin: 10px; }
+        .panel-container {
+            display: flex;
+            flex-direction: row;   
+            border: 1px solid silver;         
+            overflow: hidden;                   
+        }
+        .panel-left,.panel2-left {
+            flex: 0 0 auto;  /* only manually resize */
+            padding: 10px;
+            width: 55%;
+            min-height: 10px;
+            min-width: 150px;
+            white-space: nowrap;          
+            background: #838383;
+            color: black;
+        }
+        .splitter, .splitter2,.splitter3 {
+            flex: 0 0 auto;
+            width: 18px;
+            min-height: 10px;
+            cursor: col-resize;
+            background: orange;
+        }
+        .panel-right, .panel2-right {
+            flex: 1 1 auto; /* resizable */
+            padding: 10px;
+            width: 45%;
+            min-height: 10px;
+            min-width: 200px !important;   /* NOTE: This won't be respected! Explicit size of left forces the size to be fixed */
+            background: #eee;
+        }
+		button {
+		  font-size:11pt;
+		}
+		select,option {
+		  font-size:11pt;background-color:yellow;
+		}
+		.slider {
+		  width: 100px;
+		  background-color: orange;
+            background: orange;
+            color: orange;
+		}
+		.output { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11pt ;font-weight:normal; color:blue }
+		.message { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11pt ;font-weight:normal; color:red}
+    </style>
+</head>
+
+<body style="">
+	<script src="./js/scratch/blockly_uncompressed_vertical.js"></script>
+    <script src="./js/scratch/blocks_compressed.baseForVertical.js"></script>
+    <script src="./js/scratch/blocks_uncompressed_vertical.js"></script>
+    <script src="./js/scratch/javascript.js"></script>
+    <script src="./js/scratch/messages.js"></script>
+    <script src="./js/scratch/scratch_msgs.js"></script>  
+    <script src="./js/scratch/blocs_manipulations.js"></script>
+    <script src="./js/scratch/blocs_scratch.js"></script>
+	<script src="./js/scratch/blocs_complements.js"></script>
+	<script src="./js/scratch/javascript_complements.js"></script>
+	<script src="./js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/jquery/jquery-2.2.1.min.js"></script>
+	<script src="./js/jquery/jquery-resizable.js"></script>
+	<script src="./js/affichage.js"></script>
+	<script src="./js/fichiers.js"></script>
+	<script src="./js/macros.js"></script>
+	<script src="./js/run_geo.js" type="text/javascript"></script>
+	<script src="./js/bibli_algoGGB.js"></script>
+	<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	<script src="./js/python/python.js"></script>
+    <script src="./js/python/blocs_scratch.js"></script>
+    <script src="./js/python/python_complements.js"></script>
+    <script src="./js/python/run_python.js"></script>
+	<script src="./js/python/skulpt.min.js" type="text/javascript"></script>
+	<script src="./js/python/skulpt-stdlib.js" type="text/javascript"></script>
+ 
+<div class="page-container">
+	<div class="panel-container">
+		<div id="panel-left" class="panel-left">
+			<center>
+			<div id="boutons_editor_demo">
+				<button style="background-color:yellowgreen;" onclick="runPython(editor)">Executer</button>
+				<button style="color:red;display:none" onclick="blocklyInsertEditor(editor, getPythonText())">Insérer blocs</button>
+				<button style="color:red" onclick="blocklyToEditor(editor, getPythonText())">Traduire blocs</button>
+			</div>
+			</center>
+			<div id="editor" style="height: 35%; width:100%; border: solid 1px gray; font-size:12pt"></div> 
+			<center>
+			<div id="boutons_blockly_demo">
+				<button style="background-color:yellowgreen;display:none" onclick="runBlockly()">Executer</button>
+				<input type="file" id="fileToLoad" style="display: none" onchange="ouvrirFichier();" />
+				<button onclick="ouvrirClick();">Ouvrir</button>
+				<button onclick="sauverFichier()">Sauver</button>
+				<button style="display:none" onclick="effacerBlockly()">Effacer</button>
+				<select id="exercices" onchange="activites()">
+					<option value="exercices" selected>-- liste d'activités --</option>
+					<option value="variables">variables</option>
+					<option value="si">instructions conditionnelles</option>
+					<option value="repeter">boucles</option>
+					<option value="python">python</option>
+					<option value="">---------------------</option>
+					<option value="emoji">emoji</option>
+					<option value="chat">chat</option>
+					<option value="robot">robot</option>
+					<option value="elephant">elephant</option>
+					<option value="sangoku">sangoku</option>
+					<option value="">---------------------</option>
+					<option value="triangles">triangles</option>
+					<option value="drapeaux">drapeaux</option>
+					<option value="drapeaux_triangulaires">drapeaux triangulaires</option>
+					<option value="frise_gouttes">frise gouttes d'eau</option>
+					<option value="pavage_triangles">pavage triangulaire</option>
+					<option value="rosace">rosace</option>
+					<option value="accueil">-- retour accueil --</option>
+				</select>
+			</div>
+			</center>
+			<div id="blocklyDiv" style="height: 55%; width: 100%;"></div>
+		 </div>
+		<div class="splitter">
+		</div>       
+		<div class="panel-right" id="panel-right">
+			<center>
+				<div id="menu">
+						<button onclick="recreerApplet();Message('')">Réinitialiser <img src="./js/scratch/media/green-flag.svg" alt="" style="width:16px;height:16px" /></button>
+						<button onclick="bouton_python()">Python <img src="./js/scratch/img/py.png" alt="" style="width:16px;height:16px" /></button>
+						<input id="myRange" type="range" min="0" max="100" step="10" value="100" class="slider"></input>
+				</div>
+			</center>
+			<div id="ggbApplet" style="width: 100%;"></div>
+			<pre id="message" class="message"></pre>
+			<pre id="output"  class="output"></pre>
+			<canvas id="mycanvas"></canvas>
+			<center>
+			</center>
+        </div>		
+	</div>
+</div>
+
+<script>
+function bouton_python() {
+	document.getElementById('myRange').value = 60;
+	deplierTout();
+	// Message("La hauteur de l'éditeur peut-être changée (via le curseur)");
+}
+
+function activites() {
+	var exo = document.getElementById('exercices').value; 
+	if (exo=="exercices") {	
+		window.location.href = "index.html";
+		return;
+	} 
+	if (exo=="accueil") {	
+		window.location.href = "index.html";
+		return;
+	} 
+	effacerOutput();
+	Println("Choisir une question dans le menu de l'éditeur de blocs");
+	if (exo=="drapeaux") {
+		Blockly.config.url = "exos/drapeaux";
+	}
+	else if (exo=="drapeaux_triangulaires") {
+		Blockly.config.url = "exos/drapeaux_triangulaires";
+	}
+	else if (exo=="somme_consecutifs") {
+		Blockly.config.url = "exos/somme_consecutifs";
+	}
+	else if (exo=="variables") {
+		Blockly.config.url = "exos/variables";
+	}
+	else if (exo=="repeter") {
+		Blockly.config.url = "exos/boucles_bornees";
+	}
+	else if (exo=="si") {
+		Blockly.config.url = "exos/si";
+	}
+	else if (exo=="frise_gouttes") {
+		Blockly.config.url = "exos/frise_gouttes";
+	}
+	else if (exo=="pavage_triangles") {
+		Blockly.config.url = "exos/pavage_triangles";
+	}
+	else if (exo=="triangles") {
+		Blockly.config.url = "exos/triangles";
+	}
+	else if (exo=="achats") {
+		Blockly.config.url = "exos/achats";
+	}
+	else if (exo=="python") {
+		Blockly.config.url = "exos/python";
+	}
+	else if (exo=="rosace") {
+		Blockly.config.url = "exos/rosace";
+	}
+	else if (exo=="cercle_circonscrit") {
+		Blockly.config.url = "exos/cercle_circonscrit";
+	}
+	else if (exo=="cercle_inscrit") {
+		Blockly.config.url = "exos/cercle_inscrit";
+	}
+	else if (exo=="emoji") {
+		Blockly.config.url = "exos/sixieme/emoji";
+	}
+	else if (exo=="chat") {
+		Blockly.config.url = "exos/sixieme/chat";
+	}
+	else if (exo=="robot") {
+		Blockly.config.url = "exos/sixieme/robot";
+	}
+	else if (exo=="elephant") {
+		Blockly.config.url = "exos/cinquieme/elephant";
+	}
+	else if (exo=="sangoku") {
+		Blockly.config.url = "exos/cinquieme/sangoku";
+	}
+	else {
+		return;
+	}	
+	window.location.href = "index.html?url=" + Blockly.config.url;
+}
+
+initScratchGGB();
+initPython();
+</script>
+
+</body>
+</html>
