@@ -1,0 +1,65 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="oU71`hS~:9^3@Mm#W/=Z" islocal="false" iscloud="false">n</variable>
+    <variable type="" id="_4yQCb4fJVBfNP.O^kEm" islocal="false" iscloud="false">somme</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="data_setvariableto" id="c-|G}8+@in~8NzWli]Il">
+        <field name="VARIABLE" id="oU71`hS~:9^3@Mm#W/=Z" variabletype="">n</field>
+        <comment id="p*Os^$o#/4z5bP}X!v`o" pinned="true" h="91" w="158" x="240" y="7" minimized="false">Peut être modifié</comment>
+        <value name="VALUE">
+          <shadow type="text" id="L5;S][c+2F{Y=PNNfAf2">
+            <field name="TEXT">7</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="NDlGI][q,G;=:k[T7a?k">
+            <field name="VARIABLE" id="_4yQCb4fJVBfNP.O^kEm" variabletype="">somme</field>
+            <comment id="hz}h9A^dd^80HWEELD[*" pinned="true" h="104" w="216" x="446" y="77.99999999999999" minimized="false">somme de n, n+1 et n+2</comment>
+            <value name="VALUE">
+              <shadow type="text" id="P-);DC*KjY879!s~s[_K">
+                <field name="TEXT"></field>
+              </shadow>
+            </value>
+            <next>
+              <block type="control_if_else" id="s~u^r,SkZhd:`^;o#9sW">
+                <comment id="9F;fCSh2Pg~Y`OVRqLET" pinned="true" h="83.99998474121094" w="141.33331298828125" x="279" y="121.33333333333331" minimized="false">A compléter</comment>
+                <statement name="SUBSTACK">
+                  <block type="looks_say" id="MT9hm:.bg7Otn_/7L;(#">
+                    <value name="MESSAGE">
+                      <shadow type="text" id="YY8n-{i4uzoUBSC.o]]t">
+                        <field name="TEXT">la somme est divisible par 3</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="SUBSTACK2">
+                  <block type="looks_say" id="_jS%wZ6eR57zOqY9tI=r">
+                    <value name="MESSAGE">
+                      <shadow type="text" id="C5t=1pN1KDr@J:/4EOu[">
+                        <field name="TEXT">la somme n'est pas divisible par 3</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="operator_mod" id="u8O[u)b`:-X,zdO^?A6w" x="308" y="208">
+    <value name="NUM1">
+      <shadow type="math_number" id="76iLHDz;pVT:W5t~VB,7">
+        <field name="NUM"></field>
+      </shadow>
+    </value>
+    <value name="NUM2">
+      <shadow type="math_number" id="1IlqMPN=w8!9t!,W/oX_">
+        <field name="NUM"></field>
+      </shadow>
+    </value>
+  </block>
+</xml>

@@ -1,0 +1,133 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="ggb_1_arg" id="(`Z1OZ7N5_@aNM+gP!xa">
+        <field name="OP">fixer_cellule</field>
+        <value name="NOM">
+          <shadow type="text" id="ylUg5]gi:ZW9:NeM!%bB">
+            <field name="TEXT">D2</field>
+          </shadow>
+        </value>
+        <value name="OBJ1">
+          <shadow type="text" id="eP@p/q4jK@d,sZ#85`Bc">
+            <field name="TEXT"></field>
+          </shadow>
+          <block type="operator_multiply" id="#c=fWK*{2(c`Xll#oI7:">
+            <value name="NUM1">
+              <shadow type="math_number" id="gMl1pB?r8=4k|#za1iBx">
+                <field name="NUM"></field>
+              </shadow>
+              <block type="ggb_valeur_de" id="{t`vJ.Pj81U?pt%d(G(+">
+                <value name="NAME">
+                  <shadow type="text" id="j}VYoRb-c%,eLQ|(:_-B">
+                    <field name="TEXT">B2</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="NUM2">
+              <shadow type="math_number" id="qG!zm8u517tEh*:?#LDN">
+                <field name="NUM"></field>
+              </shadow>
+              <block type="ggb_valeur_de" id="U~_X7KpZ}lQiULYI(tOJ">
+                <value name="NAME">
+                  <shadow type="text" id="mhc3DvC@`OIZ$z/4=t2$">
+                    <field name="TEXT">C2</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="ggb_1_arg" id="pc/w9(KxuePAF`[$V7^u">
+            <field name="OP">fixer_cellule</field>
+            <value name="NOM">
+              <shadow type="text" id="@_nNR[[21!(!vRj?T@m4">
+                <field name="TEXT">D3</field>
+              </shadow>
+            </value>
+            <value name="OBJ1">
+              <shadow type="text" id="t,Fo(WREE*hL3[oAOt=G">
+                <field name="TEXT"></field>
+              </shadow>
+              <block type="operator_multiply" id="XuJ34Zq4Xi?ZmTIW#FcL">
+                <value name="NUM1">
+                  <shadow type="math_number" id="WboqUo~pDadl#uL)uVL!">
+                    <field name="NUM"></field>
+                  </shadow>
+                  <block type="ggb_valeur_de" id="jbFaU|!Q+i(8/[p3d6qy">
+                    <value name="NAME">
+                      <shadow type="text" id="y~|F!6c!dD3cwvUc*P/G">
+                        <field name="TEXT">B3</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="NUM2">
+                  <shadow type="math_number" id="g%jFAq)zYoxS%*kXyP?_">
+                    <field name="NUM"></field>
+                  </shadow>
+                  <block type="ggb_valeur_de" id="7`n8}4huY{cMRhnYjOP/">
+                    <value name="NAME">
+                      <shadow type="text" id="_Gj/JS5DP:aK|F=uDx9/">
+                        <field name="TEXT">C3</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="ggb_1_arg" id="sUYk,unf.x/GZ%Ht];0O">
+                <field name="OP">fixer_cellule</field>
+                <value name="NOM">
+                  <shadow type="text" id="oUqa}5{bs0_xDLSulf0]">
+                    <field name="TEXT">D4</field>
+                  </shadow>
+                </value>
+                <value name="OBJ1">
+                  <shadow type="text" id="[f.4hzaDJ@^2|MQFo~cG">
+                    <field name="TEXT"></field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="ggb_1_arg" id="(fHK3GGswU4R5*I8Y5*(">
+                    <field name="OP">fixer_cellule</field>
+                    <value name="NOM">
+                      <shadow type="text" id="g9XDdqty1[lSaZX#{(rY">
+                        <field name="TEXT">D5</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ1">
+                      <shadow type="text" id="HfM0*sbiI8UAzr;]CWM3">
+                        <field name="TEXT"></field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="ggb_1_arg" id="}C~T:E7ih~nxKw|Wj!b]">
+                        <field name="OP">fixer_cellule</field>
+                        <value name="NOM">
+                          <shadow type="text" id="MO5$#6un#_AeK=,9#e*9">
+                            <field name="TEXT">D6</field>
+                          </shadow>
+                        </value>
+                        <value name="OBJ1">
+                          <shadow type="text" id="9V}ZMl^3j,em;iwJ;K#]">
+                            <field name="TEXT"></field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

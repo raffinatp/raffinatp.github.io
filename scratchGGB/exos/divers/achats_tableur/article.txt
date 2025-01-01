@@ -1,0 +1,14 @@
+
+<bloc>
+Achats (tableur)
+
+Cette activité est une adaptation à la programmation par blocs d’un exemple classique d’utilisation d’un tableur. Dans un premier temps, les élèves doivent compléter le programme suivant :
+
+<img30752|center>
+
+Dans un second temps, une boucle est introduite pour généraliser le calcul des totaux :
+
+<img30754|center>
+
+Et pour finir, une remise de 10 % est accordée aux articles achetés à plusieurs exemplaires, ce qui conduit à introduire une instruction conditionnelle dans la boucle.
+</bloc>
