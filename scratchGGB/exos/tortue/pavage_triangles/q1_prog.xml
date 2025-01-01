@@ -1,0 +1,103 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="procedures_definition" id="^RY/^3)sz`c$y@/CviSi" x="5" y="9">
+    <statement name="custom_block">
+      <block type="procedures_prototype" id="^n}AoVb}UOb8FHAL*Me5">
+        <mutation proccode="motif" argumentids="[]" argumentnames="[]" argumentdefaults="[]" warp="false"></mutation>
+      </block>
+    </statement>
+    <next>
+      <block type="debut_fin_remplissage" id="H#Syg=5`e+OyV/*-ULl3">
+        <field name="OP">debut</field>
+        <next>
+          <block type="avancer_reculer" id="H_4HZAdA+#HRfpW81gq8">
+            <field name="OP">forward</field>
+            <value name="NAME">
+              <shadow type="math_number" id="UW,W.gtWf0u2{bkO5T]@">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="var_gauche_droite" id="Z+pu{8!C6}Q4h5+@|V/?">
+                <field name="OP">right</field>
+                <value name="NAME">
+                  <shadow type="math_number" id=",`m]]Uqxf/$1]l;Z-57^">
+                    <field name="NUM">90</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="avancer_reculer" id="%{(I[9YCWDpd}=4SCqf|">
+                    <field name="OP">forward</field>
+                    <value name="NAME">
+                      <shadow type="math_number" id="I_l7-=ra/^S{QS.t|pff">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="var_gauche_droite" id="Mw7hj;,UBVVlm?@BWT#O">
+                        <field name="OP">right</field>
+                        <value name="NAME">
+                          <shadow type="math_number" id="K+i(fB#8XWB3NK8},C1f">
+                            <field name="NUM">135</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="avancer_reculer" id="b`!$Q)$eKVZ+9!lAXZic">
+                            <field name="OP">forward</field>
+                            <comment id="Msz9)ZB4D#3+@rodiS_o" pinned="true" h="101.3333740234375" w="206.66668701171875" x="318" y="304.00000000000006" minimized="false">A compléter par la longueur d'une diagonale</comment>
+                            <value name="NAME">
+                              <shadow type="math_number" id="rDS|mVl68DJfldRBY~~P">
+                                <field name="NUM"></field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="var_gauche_droite" id="BDD=hQGtaTXX59]]:#.-">
+                                <field name="OP">right</field>
+                                <value name="NAME">
+                                  <shadow type="math_number" id="?{C!KdNICi1mAbA,1xD$">
+                                    <field name="NUM">135</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="debut_fin_remplissage" id="OBx0#*!dKI6+7KT(@]-@">
+                                    <field name="OP">fin</field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="325" y="20">
+    <next>
+      <block type="couleur_remplissage" id="-iKK+*VzcALe?11|XZU[">
+        <value name="COLOR">
+          <shadow type="colour_picker" id="vTVw.r8#-M*RmUw){068">
+            <field name="COLOUR">#ff0000</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="procedures_call" id="p*To8LOx-(!kkO]UhEzo">
+            <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_call" id="agxN#;+-B@xOpCiL2FOy" x="285" y="429">
+    <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+  </block>
+  <block type="procedures_call" id="3+b[KMlb]((%w#z6iT]." x="373" y="431">
+    <mutation proccode="motif" argumentids="[]" warp="false"></mutation>
+  </block>
+</xml>

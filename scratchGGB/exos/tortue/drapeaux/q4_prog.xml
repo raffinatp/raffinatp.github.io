@@ -1,0 +1,118 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="af{X#IYkrhtx9=KRGcUw" islocal="false" iscloud="false">n</variable>
+    <variable type="" id="xG1QH:089Gi9gBvO}GW^" islocal="false" iscloud="false">cote</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="51" y="-52">
+    <next>
+      <block type="data_setvariableto" id="P[Bk^?Fw5x]*-Eu@mV+U">
+        <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="sQW(j?9d`.@(o%s?D-^i">
+            <field name="TEXT">6</field>
+          </shadow>
+          <block type="ggb_valeur_de" id="8Ruo-_v5FHEFMKG6ne[I">
+            <value name="NAME">
+              <shadow type="text" id="dNk+.vFW8xX;GtY9Iq.(">
+                <field name="TEXT">n</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="tortue_teleport" id="E$:I10_qGr]ZiiKd^ACS">
+            <value name="ABS">
+              <shadow type="math_number" id="]a!,bZ];t([QSwb]fdL#">
+                <field name="NUM">3</field>
+              </shadow>
+              <block type="ggb_1_arg_fonct" id="7ze4H,UG!y_7Aw-QaN#+">
+                <field name="OP">coordX</field>
+                <value name="OBJ1">
+                  <shadow type="text" id="YW!?(X+0,fED7YU.q!Sj">
+                    <field name="TEXT">P</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="ORD">
+              <shadow type="math_number" id="wXL`k2xBx8(Q,C`!w:3a">
+                <field name="NUM">-1</field>
+              </shadow>
+              <block type="ggb_1_arg_fonct" id="vq4[;S3XU/gt69l7rL$k">
+                <field name="OP">coordY</field>
+                <value name="OBJ1">
+                  <shadow type="text" id="7vj=ip+gq4hcYm-wg{~N">
+                    <field name="TEXT">P</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="tortue_viser" id="c;)_^pzAycYJ],MM:E7?">
+                <value name="ABS">
+                  <shadow type="math_number" id="nARM88wzGP$,b_J6[LAB">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="ggb_1_arg_fonct" id="Ii(jp{rN@~p]fo/7`t$s">
+                    <field name="OP">coordX</field>
+                    <value name="OBJ1">
+                      <shadow type="text" id="^G_6@?nWuHR^0cxYTvqi">
+                        <field name="TEXT">Q</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="ORD">
+                  <shadow type="math_number" id=":uRV[5;kDsK}4LSOEopD">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="ggb_1_arg_fonct" id="3Vbc@+@$jb9-LqxQJ7SD">
+                    <field name="OP">coordY</field>
+                    <value name="OBJ1">
+                      <shadow type="text" id="b1dX`ngoldF?R[,tPtgE">
+                        <field name="TEXT">Q</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="baisser_lever_stylo" id="d.x(XGC0g.6J]AeTIgrm">
+                    <field name="OP">penup</field>
+                    <next>
+                      <block type="avancer_reculer" id="|B2qBg2{mlx4^UM||V8o">
+                        <field name="OP">forward</field>
+                        <value name="NAME">
+                          <shadow type="math_number" id=")U2MijsG|(2zva^%,MX0">
+                            <field name="NUM"></field>
+                          </shadow>
+                          <block type="data_variable" id="wS:{t1p=iUrGv`nqEUXl">
+                            <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="baisser_lever_stylo" id="xn^T5~NTXLec#L!E+w_a">
+                            <field name="OP">pendown</field>
+                            <next>
+                              <block type="avancer_reculer" id="(9jxkab2]l1*%TMyF7}:">
+                                <field name="OP">forward</field>
+                                <value name="NAME">
+                                  <shadow type="math_number" id="47K?|HKEAmZQ3wMs~LvE">
+                                    <field name="NUM">2</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
