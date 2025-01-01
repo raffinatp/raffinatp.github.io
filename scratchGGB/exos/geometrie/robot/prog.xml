@@ -1,0 +1,25 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <next>
+      <block type="ggb_commande_2pts" id="tiI7@:;MDG;Rb=1|-JVS">
+        <field name="OP">Circle</field>
+        <value name="NOM">
+          <shadow type="text" id="i$V{)E3{HFT`_EfuN|59">
+            <field name="TEXT"></field>
+          </shadow>
+        </value>
+        <value name="OBJ1">
+          <shadow type="text" id="t2p;OE.t.L+qf#J:GdLa">
+            <field name="TEXT">F</field>
+          </shadow>
+        </value>
+        <value name="OBJ2">
+          <shadow type="text" id="V^.~lJ=#TNXn}F$G8aJI">
+            <field name="TEXT">3</field>
+          </shadow>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,310 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="G-:,%UkfG)2d+Z%5nf]$" islocal="false" iscloud="false">i</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="28" y="-15">
+    <next>
+      <block type="ggb_commande_2pts" id="%DKi+-]ls-SN9lmSJ1Y5">
+        <field name="OP">Midpoint</field>
+        <value name="NOM">
+          <shadow type="text" id="V({Xb3z]ZFWd77MQk6~T">
+            <field name="TEXT">O</field>
+          </shadow>
+        </value>
+        <value name="OBJ1">
+          <shadow type="text" id="#f3?oD!BV4+foPnkudj_">
+            <field name="TEXT">A</field>
+          </shadow>
+        </value>
+        <value name="OBJ2">
+          <shadow type="text" id="z#3bP7~7w!%5Zs]STi][">
+            <field name="TEXT">B</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="ggb_commande_2pts" id="G1BXqdx{p8C5cGd7T*6M">
+            <field name="OP">Semicircle</field>
+            <value name="NOM">
+              <shadow type="text" id="V,dMiONBUNdw4^oz4th?">
+                <field name="TEXT">a1</field>
+              </shadow>
+            </value>
+            <value name="OBJ1">
+              <shadow type="text" id="KG@h[uU6rrma+0:66)%u">
+                <field name="TEXT">A</field>
+              </shadow>
+            </value>
+            <value name="OBJ2">
+              <shadow type="text" id="sCH-7s_k5=bcDJ:5Gi,a">
+                <field name="TEXT">B</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="ggb_commande_2pts" id="0ZW|CHt?G5QB/`trl=[W">
+                <field name="OP">Semicircle</field>
+                <value name="NOM">
+                  <shadow type="text" id="_ArCB8wUAomWUV)PB|^{">
+                    <field name="TEXT">b1</field>
+                  </shadow>
+                </value>
+                <value name="OBJ1">
+                  <shadow type="text" id="KlgolD#Y[x5q-K3;ICSM">
+                    <field name="TEXT">A</field>
+                  </shadow>
+                </value>
+                <value name="OBJ2">
+                  <shadow type="text" id="1,^W=_@}`;TcI{A$@[l?">
+                    <field name="TEXT">O</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="ggb_commande_2pts" id="0yR-Dwae5Lb[(W!B!Ot/">
+                    <field name="OP">Semicircle</field>
+                    <value name="NOM">
+                      <shadow type="text" id="$UPw`KXvJky]PxW[sD~-">
+                        <field name="TEXT">c1</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ1">
+                      <shadow type="text" id="TRQuBkXfM4H9qwNsK=`N">
+                        <field name="TEXT">B</field>
+                      </shadow>
+                    </value>
+                    <value name="OBJ2">
+                      <shadow type="text" id="x6_q2]MWtrc`k|,h2U/9">
+                        <field name="TEXT">O</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="data_setvariableto" id="-Q65Q)+mn-a?x%c?M,`r">
+                        <field name="VARIABLE" id="G-:,%UkfG)2d+Z%5nf]$" variabletype="">i</field>
+                        <value name="VALUE">
+                          <shadow type="text" id="w-WVTelZ1k~`xl0lDR/A">
+                            <field name="TEXT">1</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="control_repeat" id=")0gpl1U|OWmTb0Wvw(N.">
+                            <value name="TIMES">
+                              <shadow type="math_whole_number" id="aSZvjL!pT*#pl~*0|]~d">
+                                <field name="NUM"></field>
+                              </shadow>
+                              <block type="ggb_valeur_de" id=";Yp)J_%CsJ0JiC,B/Vmg">
+                                <value name="NAME">
+                                  <shadow type="text" id="/#+1`Zy,QGd?B4@Ha7F:">
+                                    <field name="TEXT">n</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="SUBSTACK">
+                              <block type="ggb_commande_2pts" id="DD#C#(0k9_3a~M_1.q*P">
+                                <field name="OP">Translate</field>
+                                <value name="NOM">
+                                  <shadow type="text" id="_cT:r2Gf,U83b{*aJHFR">
+                                    <field name="TEXT">a2</field>
+                                  </shadow>
+                                  <block type="operator_join" id="pz(x{MTC]3[p4vhrx!E;">
+                                    <value name="STRING1">
+                                      <shadow type="text" id="Nt:vXHzvK1M(O^8`JVMT">
+                                        <field name="TEXT">a</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="STRING2">
+                                      <shadow type="text" id="YDIBlol{+5,kF.5DG[YO">
+                                        <field name="TEXT"></field>
+                                      </shadow>
+                                      <block type="operator_add" id="Y;fnkw(|kKgpIw%x6x_b">
+                                        <value name="NUM1">
+                                          <shadow type="math_number" id="Jtrriuud^7}}*[(X5!*7">
+                                            <field name="NUM"></field>
+                                          </shadow>
+                                          <block type="data_variable" id="qjD97GcxU|y3S[OFx%nk">
+                                            <field name="VARIABLE" id="G-:,%UkfG)2d+Z%5nf]$" variabletype="">i</field>
+                                          </block>
+                                        </value>
+                                        <value name="NUM2">
+                                          <shadow type="math_number" id="N.N)[PK=@1wi`?wR~Ou?">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="OBJ1">
+                                  <shadow type="text" id="#||R$btBW3yV@iKjJC%h">
+                                    <field name="TEXT"></field>
+                                  </shadow>
+                                  <block type="operator_join" id="5b_,1DhXe_QlO9.qSpuq">
+                                    <value name="STRING1">
+                                      <shadow type="text" id="z~fpJFAkJ|QE_%/J?j|B">
+                                        <field name="TEXT">a</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="STRING2">
+                                      <shadow type="text" id="fe_k0gNB6TVq]/6w[[Gy">
+                                        <field name="TEXT"></field>
+                                      </shadow>
+                                      <block type="data_variable" id="r/sT]?CB6twW(HNI~Tn^">
+                                        <field name="VARIABLE" id="G-:,%UkfG)2d+Z%5nf]$" variabletype="">i</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="OBJ2">
+                                  <shadow type="text" id="U#CMd6vKu[]D.J7.SBil">
+                                    <field name="TEXT">AB</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="ggb_commande_2pts" id="rG]IFitkxV[WB+oe2;s/">
+                                    <field name="OP">Translate</field>
+                                    <value name="NOM">
+                                      <shadow type="text" id="d$2f4g+o#BQ_d/unz1Vh">
+                                        <field name="TEXT">a2</field>
+                                      </shadow>
+                                      <block type="operator_join" id="~ly0zr9y_~UrYRxW@qd#">
+                                        <value name="STRING1">
+                                          <shadow type="text" id="Ew*0*iS._QQpZ2RP_jR=">
+                                            <field name="TEXT">b</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="STRING2">
+                                          <shadow type="text" id="WeWFr|y69i[N@#7zrKOX">
+                                            <field name="TEXT"></field>
+                                          </shadow>
+                                          <block type="operator_add" id="XR+5KRsG%~L[Ape+oNUA">
+                                            <value name="NUM1">
+                                              <shadow type="math_number" id="K#pR8m.%e!RbU]4M5zZK">
+                                                <field name="NUM"></field>
+                                              </shadow>
+                                              <block type="data_variable" id="@)ML.Fnhaw(w~hQ6_2j)">
+                                                <field name="VARIABLE" id="G-:,%UkfG)2d+Z%5nf]$" variabletype="">i</field>
+                                              </block>
+                                            </value>
+                                            <value name="NUM2">
+                                              <shadow type="math_number" id="I!;wN{a7`a6r9_,rgq2D">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="OBJ1">
+                                      <shadow type="text" id="sIcWj$*=E[q+`]OtQzSR">
+                                        <field name="TEXT"></field>
+                                      </shadow>
+                                      <block type="operator_join" id="X13TIzUjh.H.B?%)CSeO">
+                                        <value name="STRING1">
+                                          <shadow type="text" id="N}F%69vyqn=YaUz9Prk4">
+                                            <field name="TEXT">b</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="STRING2">
+                                          <shadow type="text" id="W+4z{7YSiTxw2XtD+YSw">
+                                            <field name="TEXT"></field>
+                                          </shadow>
+                                          <block type="data_variable" id="SF)]2MEm+{5]|WsKO]{7">
+                                            <field name="VARIABLE" id="G-:,%UkfG)2d+Z%5nf]$" variabletype="">i</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="OBJ2">
+                                      <shadow type="text" id="AEwyD--C9D8/`,5Dqqs4">
+                                        <field name="TEXT">AB</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="ggb_commande_2pts" id="{H([Fraj[7C`=F2Q4EtT">
+                                        <field name="OP">Translate</field>
+                                        <value name="NOM">
+                                          <shadow type="text" id="oZ0:u.5j*ut)12O=}Ss)">
+                                            <field name="TEXT">a2</field>
+                                          </shadow>
+                                          <block type="operator_join" id="~[+-_A-AVk`=wx@=|;R~">
+                                            <value name="STRING1">
+                                              <shadow type="text" id="[3PS=-we_F4,0`[7fv+o">
+                                                <field name="TEXT">c</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="STRING2">
+                                              <shadow type="text" id="w?#8DrwZX7xh.nwPJjK8">
+                                                <field name="TEXT"></field>
+                                              </shadow>
+                                              <block type="operator_add" id=")D):G.g%*dUyUNi^bC4b">
+                                                <value name="NUM1">
+                                                  <shadow type="math_number" id="8dA)_1fouH.PO;4%IDEB">
+                                                    <field name="NUM"></field>
+                                                  </shadow>
+                                                  <block type="data_variable" id="yo)f6|/.puK,?3,hmGWK">
+                                                    <field name="VARIABLE" id="G-:,%UkfG)2d+Z%5nf]$" variabletype="">i</field>
+                                                  </block>
+                                                </value>
+                                                <value name="NUM2">
+                                                  <shadow type="math_number" id="NKjjZo$Kf12d`N^+#by^">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="OBJ1">
+                                          <shadow type="text" id="5H9qz*=4_TqAf#s)Ay-W">
+                                            <field name="TEXT"></field>
+                                          </shadow>
+                                          <block type="operator_join" id="q]wvX{D}P+*uG)8_qnwj">
+                                            <value name="STRING1">
+                                              <shadow type="text" id="JRP5SlJ:.?}JUL@DG?Lq">
+                                                <field name="TEXT">c</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="STRING2">
+                                              <shadow type="text" id="Ss`54;D#?wJ:DW?_Az3^">
+                                                <field name="TEXT"></field>
+                                              </shadow>
+                                              <block type="data_variable" id="@?h=?_ryUR~!tE`/vyO*">
+                                                <field name="VARIABLE" id="G-:,%UkfG)2d+Z%5nf]$" variabletype="">i</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="OBJ2">
+                                          <shadow type="text" id="AhC^h=AN$#RUFC$f==bn">
+                                            <field name="TEXT">AB</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="data_changevariableby" id="dNUbIxQ,XDYH3e)ec#ac">
+                                            <field name="OP">+</field>
+                                            <field name="VARIABLE" id="G-:,%UkfG)2d+Z%5nf]$" variabletype="">i</field>
+                                            <value name="VALUE">
+                                              <shadow type="math_number" id="Y`tOvjjq9g4dxK;_h?yw">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

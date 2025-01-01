@@ -1,0 +1,58 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="m0)U-hulb9*[n1pgoO)K" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="ggb_3_arg" id="j}Nc1y9K2)Mn;HM8os_Y">
+        <field name="OP">Rotate</field>
+        <value name="NOM">
+          <shadow type="text" id="@49.joK33TN[9iC7Q/`,">
+            <field name="TEXT">A1</field>
+          </shadow>
+        </value>
+        <value name="OBJ1">
+          <shadow type="text" id="LweLTtSy{1i5!AE7`(Nm">
+            <field name="TEXT">A0</field>
+          </shadow>
+        </value>
+        <value name="OBJ2">
+          <shadow type="text" id="cw`|UE5N)R?u1J+JH`[0">
+            <field name="TEXT">60</field>
+          </shadow>
+        </value>
+        <value name="OBJ3">
+          <shadow type="text" id="nTZhH0u)vE%I==3i*5R=">
+            <field name="TEXT">P</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="ggb_3_arg" id="-_e-,ba(x`In4?t)L1K2">
+            <field name="OP">Rotate</field>
+            <value name="NOM">
+              <shadow type="text" id=";eJ=r%y%2=*_U;Lm#w@T">
+                <field name="TEXT">A2</field>
+              </shadow>
+            </value>
+            <value name="OBJ1">
+              <shadow type="text" id="OTwtEpE.]mdF4s?=:UJy">
+                <field name="TEXT">A0</field>
+              </shadow>
+            </value>
+            <value name="OBJ2">
+              <shadow type="text" id=".,oT%[5H8YT=WNL?yY0W">
+                <field name="TEXT">120</field>
+              </shadow>
+            </value>
+            <value name="OBJ3">
+              <shadow type="text" id="Uk-gr4mk^mueZtZ7R}p$">
+                <field name="TEXT">P</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

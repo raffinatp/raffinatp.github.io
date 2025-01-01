@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<xml id="toolbox" style="display: none">
+    <category name="Indications" id="demos" colour="#FFFF00" secondaryColour="#FFFF00">
+			<button text="Etape 1" callbackKey="q1">
+<![CDATA[
+remplace C par B pour le cercle : la question GeoGebra change...
+]]>
+			</button>
+			<button text="Etape 2" callbackKey="q2">
+<![CDATA[
+ajoute un bloc pour le cercle de centre B (passant par D)
+]]>
+			</button>
+			<button text="..." callbackKey="q3"> 
+<![CDATA[
+complète <a target="_blank" href="http://juliette.hernando.free.fr/geogebra/emoji.pdf">l'emoji</a> avec des blocs : voir <a target="_blank" href="https://youtu.be/7U8N0ltqupw">vidéo</a>
+]]>
+			</button>
+	</category>
+    <category name="GeoGebra" id="ggb"  colour="#798933" secondaryColour="#798933">
+            <block type="ggb_commande_2pts">
+				<field name="OP">Segment</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_commande_2pts">
+				<field name="OP">Circle</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_intersections">
+				<field name="OP">Intersect</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_commande_2pts">
+				<field name="OP">Midpoint</field>
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+			<block type="ggb_couleur_remplissage">
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="COLOR">
+					<shadow type="colour_picker">
+						<field name="COLOUR">#00ff00</field>
+					</shadow>
+				</value>
+			</block>
+    </category>
+</xml>
