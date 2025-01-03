@@ -100,25 +100,24 @@
 				<button onclick="sauverFichier()">Sauver</button>
 				<button style="display:none" onclick="effacerBlockly()">Effacer</button>
 				<select id="exercices" onchange="activites()">
-					<option value="exercices" selected>-- liste d'activités --</option>
+					<option value="exercices" selected>----- liste d'activités -----</option>
 					<option value="variables">variables</option>
 					<option value="si">instructions conditionnelles</option>
 					<option value="repeter">boucles</option>
-					<option value="">---------------------</option>
+					<option value="python">python</option>
+					<option value="">----- tortue -----</option>
+					<option value="drapeaux">drapeaux</option>
+					<option value="drapeaux_triangulaires">drapeaux triangulaires</option>
+					<option value="pavage_triangles">pavage triangulaire</option>
+					<option value="">----- geometrie -----</option>
 					<option value="emoji">emoji</option>
 					<option value="chat">chat</option>
 					<option value="robot">robot</option>
 					<option value="elephant">elephant</option>
 					<option value="sangoku">sangoku</option>
-					<option value="">---------------------</option>
-					<option value="drapeaux">drapeaux</option>
-					<option value="drapeaux_triangulaires">drapeaux triangulaires</option>
-					<option value="frise_gouttes">frise gouttes d'eau</option>
-					<option value="pavage_triangles">pavage triangulaire</option>
-					<option value="rosace">rosace</option>
-					<option value="cercle_inscrit">cercle inscrit</option>
-					<option value="cercle_circonscrit">cercle circonscrit</option>
-					<option value="achats">achats (tableur)</option>
+					<option value="triangles">triangles</option>
+					<option value="frise_gouttes">frise (translations)</option>
+					<option value="rosace">rosace (rotations)</option>
 					<option value="accueil">-- retour accueil --</option>
 				</select>
 			</div>
@@ -148,31 +147,23 @@
 function activites() {
 	var exo = document.getElementById('exercices').value; 
 	if (exo=="exercices") {	
-		Blockly.config.ggbFile = "demos/vide.ggb";
-		Blockly.config.menu = "demos/menus0.xml";
-		Blockly.config.progFile = "demos/prog0.xml";
-		//window.location.href = "index.html?geo=demos/vide.ggb&menu=demos/menus0.xml&prog=prog0.xml"
 		window.location.href = "index.html";
 		return;
 	} 
 	if (exo=="accueil") {	
-		Blockly.config.ggbFile = "demos/vide.ggb";
-		Blockly.config.menu = "demos/menus0.xml";
-		Blockly.config.progFile = "demos/prog0.xml";
-		//window.location.href = "index.html?geo=demos/vide.ggb&menu=demos/menus0.xml&prog=prog0.xml"
 		window.location.href = "index.html";
 		return;
 	} 
 	effacerOutput();
 	Println("Choisir une question dans le menu de l'éditeur de blocs");
 	if (exo=="drapeaux") {
-		Blockly.config.url = "exos/drapeaux";
+		Blockly.config.url = "exos/tortue/drapeaux";
 	}
 	else if (exo=="drapeaux_triangulaires") {
-		Blockly.config.url = "exos/drapeaux_triangulaires";
+		Blockly.config.url = "exos/tortue/drapeaux_triangulaires";
 	}
 	else if (exo=="somme_consecutifs") {
-		Blockly.config.url = "exos/somme_consecutifs";
+		Blockly.config.url = "exos/boucles/somme_consecutifs";
 	}
 	else if (exo=="variables") {
 		Blockly.config.url = "exos/variables";
@@ -184,46 +175,49 @@ function activites() {
 		Blockly.config.url = "exos/si";
 	}
 	else if (exo=="frise_gouttes") {
-		Blockly.config.url = "exos/frise_gouttes";
+		Blockly.config.url = "exos/geometrie/frise_gouttes";
 	}
 	else if (exo=="pavage_triangles") {
-		Blockly.config.url = "exos/pavage_triangles";
+		Blockly.config.url = "exos/tortue/pavage_triangles";
+	}
+	else if (exo=="triangles") {
+		Blockly.config.url = "exos/geometrie/triangles";
 	}
 	else if (exo=="achats") {
-		Blockly.config.url = "exos/achats";
+		Blockly.config.url = "exos/divers/achats";
+	}
+	else if (exo=="python") {
+		Blockly.config.url = "exos/python";
 	}
 	else if (exo=="rosace") {
-		Blockly.config.url = "exos/rosace";
+		Blockly.config.url = "exos/geometrie/rosace";
 	}
 	else if (exo=="cercle_circonscrit") {
-		Blockly.config.url = "exos/cercle_circonscrit";
+		Blockly.config.url = "exos/geometrie/cercle_circonscrit";
 	}
 	else if (exo=="cercle_inscrit") {
-		Blockly.config.url = "exos/cercle_inscrit";
+		Blockly.config.url = "exos/geometrie/cercle_inscrit";
 	}
 	else if (exo=="emoji") {
-		Blockly.config.url = "exos/sixieme/emoji";
+		Blockly.config.url = "exos/geometrie/emoji";
 	}
 	else if (exo=="chat") {
-		Blockly.config.url = "exos/sixieme/chat";
+		Blockly.config.url = "exos/geometrie/chat";
 	}
 	else if (exo=="robot") {
-		Blockly.config.url = "exos/sixieme/robot";
+		Blockly.config.url = "exos/geometrie/robot";
 	}
 	else if (exo=="elephant") {
-		Blockly.config.url = "exos/cinquieme/elephant";
+		Blockly.config.url = "exos/geometrie/elephant";
 	}
 	else if (exo=="sangoku") {
-		Blockly.config.url = "exos/cinquieme/sangoku";
+		Blockly.config.url = "exos/geometrie/sangoku";
 	}
 	else {
 		return;
 	}	
 	window.location.href = "index.html?url=" + Blockly.config.url;
-	//loadMenu();
-	//initScratchGGB();
 }
-
 initScratchGGB();
 /*
 	// editeur
