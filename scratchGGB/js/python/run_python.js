@@ -76,7 +76,7 @@ function builtinRead(x) {
 	return Sk.builtinFiles["files"][x];
 }
 
-function runPython(editor) {
+function runPython0(editor) {
 	effacerOutput(); 
 	prog = editor.getValue();
 	prog = prog.split("é").join("e");
@@ -88,14 +88,39 @@ function runPython(editor) {
 //fixerNbInitialObjets(0);
 		initialiser();
 	}
-	if (prog.indexOf("turtle")>=0) {
-		document.getElementById("mycanvas").style.visibility = 'visible';
-		document.getElementById("mycanvas").style.width = '100%';
-		document.getElementById("mycanvas").style.height = '240px';
-		Sk.canvas = "mycanvas";
-	}
 	try {
 		eval(Sk.importMainWithBody("<stdin>",false,prog));
+	}
+	catch(e) {
+		Println(e.toString());
+		try {
+			var lig = e.lineno;
+			Println("erreur ligne " + lig);
+			editor.gotoLine(lig);
+		}
+		catch(e1) {
+		}
+	}
+}
+
+function runPython(editor) {
+	effacerOutput(); 
+	prog = editor.getValue();
+	prog = prog.split("é").join("e");
+	prog = prog.split("è").join("e");
+	prog = prog.split("ê").join("e");
+	prog = prog.split("à").join("a");
+	try {
+		var nbObj = Blockly.config.nbInitialObjets;
+		var code = "tracerFigure = function() {" + "\n"
+			+ "fixerNbInitialObjets(" + nbObj + ");" + "\n"
+			+ "fixerValeursAsurveiller(['n']);" + "\n"
+			+ "fixerPointsAsurveiller(['P','Q']);" + "\n"
+			+ "initialiser();\n"
+			+ "eval(Sk.importMainWithBody('<stdin>',false,prog));\n"
+			+ "}\n";
+		eval(code+"tracerFigure();\n");
+		//Println(tracerFigure.toString());
 	}
 	catch(e) {
 		Println(e.toString());
