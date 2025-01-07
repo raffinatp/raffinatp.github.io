@@ -42,23 +42,29 @@ function effacerMessage() {
 	var mypre =document.getElementById("message");
 	mypre.innerHTML = "";
 }
+
 window.alert = function(texte) {
 	var txt = (typeof texte !== 'undefined') ? texte : '';
 	var evaluer = false;
 	try {
 		if (txt.endsWith("?") && txt.length>1) {
 			txt = txt.split("?").join("");
-			//confirm("!"+txt+"!");
 			evaluer = true;
 		}
 	} catch(ex) {
 	}
 	var mypre =document.getElementById("output");
 	if (evaluer) {
-		mypre.innerHTML = mypre.innerHTML + formel_jvs(txt) + "\n";		
+		mypre.innerHTML = mypre.innerHTML + formel_jvs(txt) + "\n";	
+		if (txt.indexOf("=")>0) { // équation
+			mypre.innerHTML = mypre.innerHTML + ggbApplet.evalCommandCAS( "solve("+txt+")" ) + "\n";
+			 if (txt.indexOf("y")>=0) ggbApplet.evalCommand(txt); // courbe			
+		}
+		else if (txt.indexOf("x")>=0) { // courbe
+			ggbApplet.evalCommand(txt);	
+		}
 	}
 	else {
 		mypre.innerHTML = mypre.innerHTML + txt + "\n";
 	}
-	ggbApplet.evalCommand(txt);
 }
