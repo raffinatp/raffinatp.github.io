@@ -1,0 +1,109 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="Zq/etCebfP*)/!AiEbV=" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="data_setvariableto" id="PJcI,v{US-,pm#0Nz)uf">
+        <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+        <comment id="VhrIzP}.qG~SSE$4F_Ud" pinned="true" h="128" w="176" x="283" y="14.666666666666671" minimized="false">CALCUL FORMEL
+
+remplacer 7 par x
+        </comment>
+        <value name="VALUE">
+          <shadow type="text" id="gJtxZtXh[,8afIbe]S.=">
+            <field name="TEXT">7</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="2=E!7ORAmF+uc{6f{1GR">
+            <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+            <value name="VALUE">
+              <shadow type="text" id="~av5k;1ye+Ak`ruC_Njy">
+                <field name="TEXT">0</field>
+              </shadow>
+              <block type="operator_multiply" id="`MI`DA[_M?}}z3qi8!0D">
+                <value name="NUM1">
+                  <shadow type="math_number" id="Me+pi].+QzI+^_pjs7zV">
+                    <field name="NUM"></field>
+                  </shadow>
+                  <block type="data_variable" id="[~4sMGhzYj(26U-~^bx(">
+                    <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+                  </block>
+                </value>
+                <value name="NUM2">
+                  <shadow type="math_number" id="_}2fVtm-0zsqvetoL~z[">
+                    <field name="NUM">6</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="data_setvariableto" id="Wd,9H**Tl-HhWh9fdRW!">
+                <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+                <value name="VALUE">
+                  <shadow type="text" id="ttjx9kwB88^Q*$GT/5q-">
+                    <field name="TEXT">0</field>
+                  </shadow>
+                  <block type="operator_add" id="oKz,ZX8%3T?xc/hE+^dH">
+                    <value name="NUM1">
+                      <shadow type="math_number" id="w(9d5Jo!?Cb.hB_lJXHr">
+                        <field name="NUM"></field>
+                      </shadow>
+                      <block type="data_variable" id=")utPY^?/x`d(N3_yQrkK">
+                        <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+                      </block>
+                    </value>
+                    <value name="NUM2">
+                      <shadow type="math_number" id="nA`*g*Vt375{BJ;(Cesm">
+                        <field name="NUM">10</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="data_setvariableto" id="oQ$.zR2_`VR){96rXp4E">
+                    <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+                    <value name="VALUE">
+                      <shadow type="text" id="iOmClQz3:b~m1`aOz]uh">
+                        <field name="TEXT">0</field>
+                      </shadow>
+                      <block type="operator_divide" id="V)`%NoFmc^cz~UMd8zIN">
+                        <value name="NUM1">
+                          <shadow type="math_number" id="k%VdH.XUG1yAh3,})T`-">
+                            <field name="NUM"></field>
+                          </shadow>
+                          <block type="data_variable" id="#~1ERBAFJXETy;y=4obE">
+                            <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+                          </block>
+                        </value>
+                        <value name="NUM2">
+                          <shadow type="math_number" id="|VZ=.7-1*lww#.C{E}*/">
+                            <field name="NUM">2</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="looks_say" id="dSaGN=pm)uokW.HL(B_8">
+                        <value name="MESSAGE">
+                          <shadow type="text" id="|ELO!}8*fd`b~;ETw//C">
+                            <field name="TEXT"></field>
+                          </shadow>
+                          <block type="data_variable" id="*B.oxm5PC_?ECGIYWR^z">
+                            <field name="VARIABLE" id="Zq/etCebfP*)/!AiEbV=" variabletype="">n</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
